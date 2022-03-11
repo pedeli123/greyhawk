@@ -240,23 +240,27 @@ var initMap = function() {
 
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-//    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+// ----->OLD
+  //    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+// ----->NEW
     attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
+// ---> end NEW
     subdomains: 'abcd',
     maxZoom: 19
   }).addTo(map);
 
   loadData(dataLocation);
 
-  // Add data & GitHub links [OLD]
-//  map.attributionControl.setPrefix('Download <a href="'
-//    + dataLocation + '" target="_blank">data</a> or \
-//    view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
-//    GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
-
   // Add data & GitHub links [NEW]
+// ---> OLD
+  //  map.attributionControl.setPrefix('Download <a href="'
+  //    + dataLocation + '" target="_blank">data</a> or \
+  //    view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
+  //    GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+// ---> NEW
   map.attributionControl.setPrefix('<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Download <a href="'
     + dataLocation + '" target="_blank">data</a> or <a href="http://github.com/pedeli123/greyhawk" target="_blank">view code</a>');
+// ---> end NEW
   
   // Add custom `home` control
   addHomeButton();
