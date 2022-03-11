@@ -246,7 +246,7 @@ var initMap = function() {
   });
     	
     	//Loading the Zoomify tile layer, notice the URL
-    var layer = L.tileLayer.zoomify('https://app.box.com/s/9yzkqnvhsd4755k5ftyabmn38er99fnx/{g}/{z}-{x}-{y}.jpg', {
+    var layer = L.tileLayer.zoomify('https://app.box.com/s/9yzkqnvhsd4755k5ftyabmn38er99fnx{g}/{z}-{x}-{y}.jpg', {
 	width: 29051,
 	height: 25235,
 	continuousWorld: false,
