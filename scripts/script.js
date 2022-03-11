@@ -228,6 +228,19 @@ var addHomeButton = function() {
  */
 var initMap = function() {
 
+// ----->REMOVE OLD CODE [GOOGLE MAP]  
+// [--OLD--]  map = L.map('map', {
+// [--OLD--]    center: mapCenter,
+// [--OLD--]    zoom: mapZoom,
+// [--OLD--]    tap: false, // to avoid issues in Safari, disable tap
+// [--OLD--]    zoomControl: false,
+// [--OLD--]  });
+// [--OLD--]
+// [--OLD--]  // Add zoom control to the bottom-right corner
+// [--OLD--]  L.control.zoom({ position: 'bottomright' }).addTo(map); 
+// ----->END [GOOGLE MAP]  
+
+// ----->ADD NEW CODE [GREYHAWK MAP]   
   map = L.map('map', {
     center: mapCenter,
     zoom: mapZoom,
@@ -237,7 +250,7 @@ var initMap = function() {
 
   // Add zoom control to the bottom-right corner
   L.control.zoom({ position: 'bottomright' }).addTo(map);
-
+// ----->END [GREYHAWK MAP]
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 // [--OLD--]   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
