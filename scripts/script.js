@@ -242,16 +242,16 @@ var initMap = function() {
 
 // ----->ADD NEW CODE [GREYHAWK MAP]   
   map = L.map('map', {
-//	crs: L.CRS.Simple //Set a flat projection, as we are projecting an image
-//  });
+	crs: L.CRS.Simple //Set a flat projection, as we are projecting an image
+  });
     	
     	//Loading the Zoomify tile layer, notice the URL
     var layer = L.tileLayer.zoomify('https://app.box.com/s/9yzkqnvhsd4755k5ftyabmn38er99fnx/{g}/{z}-{x}-{y}.jpg', {
 	width: 29051,
 	height: 25235,
 	continuousWorld: false,
-	noWrap: true,	
-	center: mapCenter,
+//	noWrap: true,	
+//	center: mapCenter,
 	zoom: mapZoom,
 	tap: false, // to avoid issues in Safari, disable tap
 	zoomControl: false,
