@@ -261,12 +261,12 @@ var initMap = function() {
 //  L.control.zoom({ position: 'bottomright' }).addTo(map);
 // ----->END [GREYHAWK MAP]
 
-//  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 // [--OLD--]   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-//    attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>', // NEW
-//    subdomains: 'abcd',
-//    maxZoom: 19
-//  }).addTo(map);
+    attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>', // NEW
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
 
   loadData(dataLocation);
 
