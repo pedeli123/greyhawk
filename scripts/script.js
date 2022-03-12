@@ -229,6 +229,10 @@ var addHomeButton = function() {
 var initMap = function() {
 
   map = L.map('map', {
+	width: 29051, //-->ADDED
+	height: 25235, //-->ADDED
+	continuousWorld: false, //-->ADDED
+	noWrap: true, //-->ADDED
     center: mapCenter,
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
@@ -248,14 +252,10 @@ var initMap = function() {
 // ----->END [GOOGLE MAP]  
 
 // ----->NEW CODE [GREYHAWK MAP]   
-L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
-  attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
-	 width: 29051,
-	 height: 25235,
-	 continuousWorld: false,
-	 noWrap: true,	
- 	 subdomains: 'abcd',
-   maxZoom: 19
+  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
+	attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
+ 	subdomains: 'abcd',
+	maxZoom: 19
   }).addTo(map);  
 // ----->END [GREYHAWK MAP]
   
