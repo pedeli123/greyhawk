@@ -250,8 +250,8 @@ var initMap = function() {
 	width: 29051,
 	height: 25235,
 	continuousWorld: false,
-//	noWrap: true,	
-//	center: mapCenter,
+	noWrap: true,	
+	center: mapCenter,
 	zoom: mapZoom,
 	tap: false, // to avoid issues in Safari, disable tap
 	zoomControl: false,
