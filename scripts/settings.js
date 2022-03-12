@@ -3,8 +3,8 @@
 const dataLocation = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQzQAaRTaEmsReuVlZ5kcKGVuejHrQm_icZAeeFLomG3owSxITaDZ6_Wk435hQejuFpa4g08gPVk-sA/pub?gid=0&single=true&output=csv';
 
 // Map's initial center, and zoom level
-// const mapCenter = [41.65, -72.7]; //----->OLD GOOGLE MAP
-const mapCenter = [-98.575, 113.48]; //--NEW GREYHAWK MAP
+const mapCenter = [41.65, -72.7]; //----->OLD GOOGLE MAP
+// const mapCenter = [-98.575, 113.48]; //--NEW GREYHAWK MAP
 const mapZoom = 1;
 
 // Marker icon height and width
