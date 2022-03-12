@@ -229,36 +229,36 @@ var addHomeButton = function() {
 var initMap = function() {
 
 // ----->REMOVE OLD CODE [GOOGLE MAP]  
-// [--OLD--]  map = L.map('map', {
-// [--OLD--]    center: mapCenter,
-// [--OLD--]    zoom: mapZoom,
-// [--OLD--]    tap: false, // to avoid issues in Safari, disable tap
-// [--OLD--]    zoomControl: false,
-// [--OLD--]  });
-// [--OLD--]
-// [--OLD--]  // Add zoom control to the bottom-right corner
-// [--OLD--]  L.control.zoom({ position: 'bottomright' }).addTo(map); 
-// ----->END [GOOGLE MAP]  
-
-// ----->ADD NEW CODE [GREYHAWK MAP]   
   map = L.map('map', {
-	crs: L.CRS.Simple //Set a flat projection, as we are projecting an image
-  });
-    	
-    	//Loading the Zoomify tile layer, notice the URL
-    var layer = L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
-	width: 29051,
-	height: 25235,
-	continuousWorld: false,
-	noWrap: true,	
-	center: mapCenter,
-	zoom: mapZoom,
-	tap: false, // to avoid issues in Safari, disable tap
-	zoomControl: false,
+    center: mapCenter,
+    zoom: mapZoom,
+    tap: false, // to avoid issues in Safari, disable tap
+    zoomControl: false,
   });
 
   // Add zoom control to the bottom-right corner
-  L.control.zoom({ position: 'bottomright' }).addTo(map);
+  L.control.zoom({ position: 'bottomright' }).addTo(map); 
+// ----->END [GOOGLE MAP]  
+
+// ----->ADD NEW CODE [GREYHAWK MAP]   
+//  map = L.map('map', {
+//	crs: L.CRS.Simple //Set a flat projection, as we are projecting an image
+//  });
+//    	
+//    	//Loading the Zoomify tile layer, notice the URL
+//    var layer = L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
+//	width: 29051,
+//	height: 25235,
+//	continuousWorld: false,
+//	noWrap: true,	
+//	center: mapCenter,
+//	zoom: mapZoom,
+//	tap: false, // to avoid issues in Safari, disable tap
+//	zoomControl: false,
+//  });
+
+//  // Add zoom control to the bottom-right corner
+//  L.control.zoom({ position: 'bottomright' }).addTo(map);
 // ----->END [GREYHAWK MAP]
 
 //  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
