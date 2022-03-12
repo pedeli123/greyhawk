@@ -228,7 +228,6 @@ var addHomeButton = function() {
  */
 var initMap = function() {
 
-// ----->REMOVE OLD CODE [GOOGLE MAP]  
   map = L.map('map', {
     center: mapCenter,
     zoom: mapZoom,
@@ -238,36 +237,28 @@ var initMap = function() {
 
   // Add zoom control to the bottom-right corner
   L.control.zoom({ position: 'bottomright' }).addTo(map); 
+
+
+// ----->REMOVE OLD CODE [GOOGLE MAP]    
+//  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+//    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+//    subdomains: 'abcd',
+//    maxZoom: 19
+//  }).addTo(map);
 // ----->END [GOOGLE MAP]  
 
-// ----->ADD NEW CODE [GREYHAWK MAP]   
-//  map = L.map('map', {
-//	crs: L.CRS.Simple //Set a flat projection, as we are projecting an image
-//  });
-//    	
-//    	//Loading the Zoomify tile layer, notice the URL
-//    var layer = L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
-//	width: 29051,
-//	height: 25235,
-//	continuousWorld: false,
-//	noWrap: true,	
-//	center: mapCenter,
-//	zoom: mapZoom,
-//	tap: false, // to avoid issues in Safari, disable tap
-//	zoomControl: false,
-//  });
-
-//  // Add zoom control to the bottom-right corner
-//  L.control.zoom({ position: 'bottomright' }).addTo(map);
+// ----->NEW CODE [GREYHAWK MAP]   
+L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
+  attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
+	width: 29051,
+	height: 25235,
+	continuousWorld: false,
+	noWrap: true,	
+//    subdomains: 'abcd',
+//    maxZoom: 19
+  }).addTo(map);  
 // ----->END [GREYHAWK MAP]
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-// [--OLD--]   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>', // NEW
-    subdomains: 'abcd',
-    maxZoom: 19
-  }).addTo(map);
-
+  
   loadData(dataLocation);
 
   // Add data & GitHub links
