@@ -250,8 +250,8 @@ var initMap = function() {
 // ----->NEW CODE [GREYHAWK MAP]   
 L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
   attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
-//	 width: 29051,
-//	 height: 25235,
+	 width: 29051,
+	 height: 25235,
 	 continuousWorld: false,
 	 noWrap: true,	
  	 subdomains: 'abcd',
