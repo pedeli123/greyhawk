@@ -229,10 +229,6 @@ var addHomeButton = function() {
 var initMap = function() {
 
   map = L.map('map', {
-	width: 29051, //-->ADDED
-	height: 25235, //-->ADDED
-	continuousWorld: false, //-->ADDED
-	noWrap: true, //-->ADDED
     center: mapCenter,
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
@@ -254,6 +250,10 @@ var initMap = function() {
 // ----->NEW CODE [GREYHAWK MAP]   
   L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
 	attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
+	width: 29051, //-->ADDED
+	height: 25235, //-->ADDED
+	continuousWorld: false, //-->ADDED
+	noWrap: true, //-->ADDED
  	subdomains: 'abcd',
 	maxZoom: 19
   }).addTo(map);  
