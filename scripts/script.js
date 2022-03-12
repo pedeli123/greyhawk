@@ -254,8 +254,8 @@ L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
 	height: 25235,
 	continuousWorld: false,
 	noWrap: true,	
-//    subdomains: 'abcd',
-//    maxZoom: 19
+    	subdomains: 'abcd',
+    	maxZoom: 19
   }).addTo(map);  
 // ----->END [GREYHAWK MAP]
   
