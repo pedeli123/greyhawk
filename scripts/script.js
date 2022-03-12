@@ -229,8 +229,8 @@ var addHomeButton = function() {
 var initMap = function() {
 
   map = L.map('map', {
-//	width: 29051, //-->ADDED
-//	height: 25235, //-->ADDED
+	width: 29051, //-->ADDED
+	height: 25235, //-->ADDED
 //	continuousWorld: false, //-->ADDED
 //	noWrap: true, //-->ADDED
     center: mapCenter,
