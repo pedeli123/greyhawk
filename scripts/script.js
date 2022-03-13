@@ -262,7 +262,7 @@ var initMap = function() {
   }).addTo(map);  
 	
 //Set the view to our layer bounds, set by our Zoomify plugin
-//  map.fitBounds(initmap.getBounds());
+  map.fitBounds(getBounds());
 // ----->END [GREYHAWK MAP]
 	 
   loadData(dataLocation);
