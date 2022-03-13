@@ -261,8 +261,6 @@ var initMap = function() {
 //	maxZoom: 19
   }).addTo(map);  
 	
-//Set the view to our layer bounds, set by our Zoomify plugin
-  map.fitBounds(getBounds());
 // ----->END [GREYHAWK MAP]
 	 
   loadData(dataLocation);
