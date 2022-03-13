@@ -229,6 +229,7 @@ var addHomeButton = function() {
 var initMap = function() {
 
   map = L.map('map', {
+	crs: L.CRS.Simple, // ----->Set a flat projection, as we are projecting an image
     center: mapCenter,
     zoom: mapZoom,
     tap: false, // to avoid issues in Safari, disable tap
