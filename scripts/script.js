@@ -257,7 +257,20 @@ var initMap = function() {
 // 	subdomains: 'abcd',
 //	maxZoom: 19
   }).addTo(map);  
+	
+//Setting the view to our layer bounds, set by our Zoomify plugin
+  map.fitBounds(layer.getBounds());
 // ----->END [GREYHAWK MAP]
+	
+// ----->ADD Coordinate Finder
+  var marker = L.marker([0, 0], {
+	draggable: true,
+  }).addTo(map);
+  marker.bindPopup('LatLng Marker').openPopup();
+  marker.on('dragend', function(e) {
+	marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+  });
+// ----->END Coordinate Finder
   
   loadData(dataLocation);
 
