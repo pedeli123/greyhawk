@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 11); // ----->CHANGED FROM 11 ZOOM TO 8
+      map.flyTo(this._latlng, 8); // ----->CHANGED FROM 11 ZOOM TO 8
       updateSidebar(this);
     });
 
@@ -255,8 +255,8 @@ var initMap = function() {
 	height: 25235, //-->ADDED
 	continuousWorld: false, //-->ADDED
 	noWrap: true, //-->ADDED
-	minZoom: 1, //-->ADDED
-	maxZoom: 11, //-->ADDED
+	minZoom: 2, //-->ADDED
+	maxZoom: 9, //-->ADDED
 // 	subdomains: 'abcd',
 //	maxZoom: 19
   }).addTo(map);  
