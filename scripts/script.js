@@ -254,8 +254,8 @@ var initMap = function() {
 	height: 25235, //-->ADDED
 	continuousWorld: false, //-->ADDED
 	noWrap: true, //-->ADDED
- 	subdomains: 'abcd',
-	maxZoom: 19
+// 	subdomains: 'abcd',
+//	maxZoom: 19
   }).addTo(map);  
 // ----->END [GREYHAWK MAP]
   
