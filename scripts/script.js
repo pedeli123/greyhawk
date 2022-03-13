@@ -255,6 +255,8 @@ var initMap = function() {
 	height: 25235, //-->ADDED
 	continuousWorld: false, //-->ADDED
 	noWrap: true, //-->ADDED
+	minZoom: 1, //-->ADDED
+	maxZoom: 8, //-->ADDED
 // 	subdomains: 'abcd',
 //	maxZoom: 19
   }).addTo(map);  
