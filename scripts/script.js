@@ -268,7 +268,7 @@ var initMap = function() {
   loadData(dataLocation);
 
 // ----->GET GEODATA ON CLICK	
-  map.on('click', function(e) {
+  map.on('dblclick', function(e) {
     alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
   });
 
