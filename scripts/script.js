@@ -267,6 +267,11 @@ var initMap = function() {
 	 
   loadData(dataLocation);
 
+// ----->GET GEODATA ON CLICK	
+  map.on('click', function(e) {
+    alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
+  });
+
   // Add data & GitHub links
 // [--OLD--]  map.attributionControl.setPrefix('Download <a href="'
 // [--OLD--]  + dataLocation + '" target="_blank">data</a> or \
