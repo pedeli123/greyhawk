@@ -258,8 +258,8 @@ var initMap = function() {
 //	maxZoom: 19
   }).addTo(map);  
 	
-//Setting the view to our layer bounds, set by our Zoomify plugin
-  map.fitBounds(initmap.getBounds());
+//Set the view to our layer bounds, set by our Zoomify plugin
+//  map.fitBounds(initmap.getBounds());
 // ----->END [GREYHAWK MAP]
 	
 // ----->ADD Coordinate Finder
