@@ -5,7 +5,7 @@ const dataLocation = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQzQAaRTaE
 // Map's initial center, and zoom level
 // const mapCenter = [41.65, -72.7]; //----->OLD GOOGLE MAP
 const mapCenter = [-98.575, 113.48]; //--NEW GREYHAWK MAP
-const mapZoom = 3;
+const mapZoom = 2.5;
 
 // Marker icon height and width
 const iconHeight = 40;
