@@ -250,7 +250,7 @@ var initMap = function() {
 
 // ----->NEW CODE [GREYHAWK MAP]   
   L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
-	attribution: 'Flanaess Full Map 598 CY (2019 Edition REV1 hexed) &copy; <a href="https://www.annabmeyer.com">Anna B Meyer</a>',
+	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>',
 	width: 29051, //-->ADDED
 	height: 25235, //-->ADDED
 	continuousWorld: false, //-->ADDED
@@ -276,7 +276,7 @@ var initMap = function() {
 // [--OLD--]  view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
 // [--OLD--]  GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 // ---> NEW
-  map.attributionControl.setPrefix('<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Download <a href="'
+  map.attributionControl('| Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Download <a href="'
     + dataLocation + '" target="_blank">data</a> or <a href="http://github.com/pedeli123/greyhawk" target="_blank">view code</a>');
 // ---> end NEW
   
