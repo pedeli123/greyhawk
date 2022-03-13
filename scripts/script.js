@@ -259,17 +259,17 @@ var initMap = function() {
   }).addTo(map);  
 	
 //Setting the view to our layer bounds, set by our Zoomify plugin
-  map.fitBounds(layer.getBounds());
+  map.fitBounds(initmap.getBounds());
 // ----->END [GREYHAWK MAP]
 	
 // ----->ADD Coordinate Finder
-  var finder = L.finder([0, 0], {
-	draggable: true,
-  }).addTo(map);
-  finder.bindPopup('LatLng Marker').openPopup();
-  finder.on('dragend', function(e) {
-	finder.getPopup().setContent(finder.getLatLng().toString()).openOn(map);
-  });
+//  var finder = L.finder([0, 0], {
+//	draggable: true,
+//  }).addTo(map);
+//  finder.bindPopup('LatLng Marker').openPopup();
+//  finder.on('dragend', function(e) {
+//	finder.getPopup().setContent(finder.getLatLng().toString()).openOn(map);
+//  });
 // ----->END Coordinate Finder
   
   loadData(dataLocation);
