@@ -1,6 +1,5 @@
 var data = {};
 var groups = {};
-var finder; //ADDED VARIABLE FOR FINDER
 var map;
 
 /*
@@ -267,13 +266,13 @@ var initMap = function() {
 // ----->END [GREYHAWK MAP]
 	
 // ----->ADD Coordinate Finder
-  finder = L.finder([0, 0], {
-	draggable: true,
-  }).addTo(map);
-  finder.bindPopup('LatLng Marker').openPopup();
-  finder.on('dragend', function(e) {
-	finder.getPopup().setContent(finder.getLatLng().toString()).openOn(map);
-  });
+//  finder = L.finder([0, 0], {
+//	draggable: true,
+//  }).addTo(map);
+//  finder.bindPopup('LatLng Marker').openPopup();
+//  finder.on('dragend', function(e) {
+//	finder.getPopup().setContent(finder.getLatLng().toString()).openOn(map);
+//  });
 // ----->END Coordinate Finder
   
   loadData(dataLocation);
