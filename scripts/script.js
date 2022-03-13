@@ -257,7 +257,7 @@ var initMap = function() {
 	noWrap: true, //-->ADDED
 	minZoom: 2, //-->ADDED
 	maxZoom: 9, //-->ADDED
-// 	subdomains: 'abcd',
+ 	subdomains: 'abcd',
 //	maxZoom: 19
   }).addTo(map);  
 	
