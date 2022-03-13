@@ -264,17 +264,7 @@ var initMap = function() {
 //Set the view to our layer bounds, set by our Zoomify plugin
 //  map.fitBounds(initmap.getBounds());
 // ----->END [GREYHAWK MAP]
-	
-// ----->ADD Coordinate Finder
-//  finder = L.finder([0, 0], {
-//	draggable: true,
-//  }).addTo(map);
-//  finder.bindPopup('LatLng Marker').openPopup();
-//  finder.on('dragend', function(e) {
-//	finder.getPopup().setContent(finder.getLatLng().toString()).openOn(map);
-//  });
-// ----->END Coordinate Finder
-  
+	 
   loadData(dataLocation);
 
   // Add data & GitHub links
