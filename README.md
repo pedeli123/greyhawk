@@ -2,11 +2,9 @@
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" compiled from a Google Sheet
 
 ## Project Purpose
-I'm a GM running a Mythras campaign in the Greyhawk setting. 
-We love immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters.  
-
-This software catalogues/places/references/showcases various story elements "where" they occur on a campaign map. 
-(in this case, the world of Greyhawk)
+I'm a GM running a Mythras campaign in the Greyhawk setting.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag our key encounters.  
+<br>So I created this software:<br>
+It basically catalogues/places/references/showcases various story elements "where" they occur on a campaign map. (in this case, the world of Greyhawk)
 
 ## Attribution
 This silly little project expands on the absolutely amazing work done by:
@@ -25,24 +23,32 @@ A. SETUP BASE MAP
 <ol>
 <li><em>to output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em></li>
 </ol>
-<li>Upload (2) Content to a PUBLIC FOLDER on your Server [public_html →  Folder]</li>
+<li>Upload your (2) Content to a PUBLIC FOLDER on your private Server [public_html →  Folder]</li>
 <ol>
 <li>Grant READ PERMISSIONS on that (3) Folder [recommend "0755" (=rwxr-xr-x)]</li>
 <li>Grant FILENAME & DESCRIPTION INDEXING on that (3) Folder [see Cpanel → Advanced → Indexes]</li>
-<li>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</li>
+<li>Ensure direct access to that (3) Folder is not blocked by .htaccess rlies (or similar)</li>
 </ol>
-<li>Verify your (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+<li>Verify your (3) Folder and (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 </ol>
-B. SETUP GIT
+B. PREPARE GOOGLE SHEET
 <ol>
-<li>Fork this project (to create your own repository)
-<li>Edit code within the following files [SEE NOTES WITHIN EACH AS TO WHERE]
+<li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
+<li>SHARE this file publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
+<li>PUBLISH this "Entire Document" as a "csv" [File  →  Share  →  Publish to Web]
+</ol>
+
+C. SETUP GIT REPOSITORY
 <ol>
-<li>scripts → script.js
+<li>Fork this project (to create your own Git repository)
+<li>Edit code elements within the following files: [SEE NOTES WITHIN EACH FILE]
+<ol>
 <li>index.html
+<li>scripts → script.js
+<li>scripts → settings.js
 </ol>
 </ol>
-C. EDIT FILES
+D. EDIT FILES
 
 
 HELPFUL HINTS
