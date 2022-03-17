@@ -38,14 +38,14 @@ This silly little project results from the absolutely amazing work done by:
 <b>B. PREPARE YOUR GOOGLE SHEET</b>
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
-<li>SHARE this file publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
-<li>PUBLISH this file as "Places" in "csv" format [File  →  Share  →  Publish to Web]
+<li>SHARE this Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
+<li>PUBLISH this Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 </ol>
 
 <b>C. SETUP YOUR GIT REPOSITORY</b>
 <ol>
 <li>Fork this project (to create your MAIN Git repo)
-<li>Edit specific code elements within these files: [REFER TO NOTES WITHIN EACH FILE]
+<li>Customize specific code elements within the following files: [see "!!!---CUSTOMIZE..." notes within each]
 <ol>
 <li>index.html
 <li>scripts → script.js
