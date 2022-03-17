@@ -14,24 +14,25 @@ This silly little project expands on the absolutely amazing work done by:
 <li><a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]</li>
 <li><a href="http://www.zoomify.com/">Zoomify</a></li>
 <li><a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmliders/Leaflet.Zoomify">cmliders</a> [Leaflet.Zoomify]</li>
-<li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
+<li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty & Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
-## Steps to re-Create this (with your own IMAGE MAP)
+## Steps to re-Create (using your own IMAGE MAP)
 A. SETUP BASE MAP
 <ol>
 <li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
 <ol>
-<li><em>this outputs several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em>as your Content</li>
+<li><em>to output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em></li>
 </ol>
-<li>Upload (2) Content to a PUBLIC FOLDER on your Server [public_html &rarr; Folder]</li>
+<li>Upload (2) Content to a PUBLIC FOLDER on your Server [public_html →  Folder]</li>
 <ol>
-<li>Grant READ PERMISSIONS on that (3) Folder [recommend &ldquo;0755&rdquo; (=rwxr-xr-x)]&nbsp;</li>
-<li>Grant FILENAME &amp; DESCRIPTION INDEXING on that (3) Folder [see Cpanel&rarr;Advanced&rarr;Indexes]</li>
+<li>Grant READ PERMISSIONS on that (3) Folder [recommend "0755" (=rwxr-xr-x)]</li>
+<li>Grant FILENAME & DESCRIPTION INDEXING on that (3) Folder [see Cpanel → Advanced → Indexes]</li>
 <li>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</li>
 </ol>
 <li>Verify your (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+</ol>
 B. SETUP GIT
 <ol>
 <li>Fork this project (to create your own repository)
