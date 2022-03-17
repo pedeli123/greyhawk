@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 9); // -----**CHANGE**: define flyto zoom level, less than max zoom! (see below)
+      map.flyTo(this._latlng, 9); // -----**CHANGE**: define flyto zoom level, must be <= max zoom (see below)
       updateSidebar(this);
     });
 
@@ -240,26 +240,26 @@ var initMap = function() {
   L.control.zoom({ position: 'bottomright' }).addTo(map); 
 
 
-// ----->REMOVE [GOOGLE MAP]    
+// ----->REMOVE [Google Map]    
 //  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 //    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 //    subdomains: 'abcd',
 //    maxZoom: 19
 //  }).addTo(map);
-// ----->END [GOOGLE MAP]  
+// ----->END [Google Map]  
 
-// ----->ADD/REPLACE [GREYHAWK MAP]   
+// ----->ADD/REPLACE [Zoomify Map]   
   L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // -----**CHANGE**: url of hosted map Content
 	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>', // -----**CHANGE**: map attribution
-	width: 29051, // -----**CHANGE**: the pixel width of your original map image file (pre-zoomify)
-	height: 25235, // -----**CHANGE**: the pixel height of your original map image (pre-zoomify)
+	width: 29051, // -----**CHANGE**: the pixel width of original map image file (pre-zoomify)
+	height: 25235, // -----**CHANGE**: the pixel height of original map image file (pre-zoomify)
 	continuousWorld: false,
 	noWrap: true, 
-	minZoom: 2, // -----**CHANGE**: minimum zoom level for map
-	maxZoom: 9, // -----**CHANGE**: maximum zoom level for map
+	minZoom: 2, // -----**CHANGE**: minimum zoom level for map, according to preference
+	maxZoom: 9, // -----**CHANGE**: maximum zoom level for map, according to preference
  	subdomains: 'abcd',
   }).addTo(map);  	
-// ----->END [GREYHAWK MAP]
+// ----->END [Zoomify Map]
 	 
   loadData(dataLocation);
 
@@ -274,7 +274,9 @@ var initMap = function() {
 // [--OLD--]  view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
 // [--OLD--]  GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 // ---> NEW
-  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
+// [--OLD--]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">Github code</a>
+  ');
 // ---> end NEW
   
   // Add custom `home` control
