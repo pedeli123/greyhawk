@@ -51,10 +51,12 @@ This silly little project that I spend way too much time on (according to my wif
 <li>scripts → settings.js
 </ol>
 </ol>
+
 ## [D] PUBLISH YOUR GITHUB PAGE
 <ol>
 <li>Publish your MAIN branch ROOT folder [Settings →  Pages]
 </ol>
+
 ## [E] CUSTOMIZE MAP CONTENT
 <ol>
 <li>Upload icons in the Media Folder (organize as needed)
@@ -72,7 +74,7 @@ Double click on a map position to get Latitude & Longitude (to insert as coordin
 ## REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
 You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). [see README instructions at <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methods]
 
-# **BELOW STILL UNDER CONSTRUCTON**
+# [**BELOW STILL UNDER CONSTRUCTON**]
 
 Copy and paste the published URL into the `dataLocation`
 variable in the `settings.js` file as shown below. Make sure that the long link ends in: `.../pub?gid=0&single=true&output=csv`
