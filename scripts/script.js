@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 9); // ----->CHANGED FROM 11 ZOOM TO 9
+      map.flyTo(this._latlng, 9); // ----->**CHANGE**: define flyto zoom level, less than max zoom! (see below)
       updateSidebar(this);
     });
 
@@ -240,7 +240,7 @@ var initMap = function() {
   L.control.zoom({ position: 'bottomright' }).addTo(map); 
 
 
-// ----->REMOVE OLD CODE [GOOGLE MAP]    
+// ----->REMOVE [GOOGLE MAP]    
 //  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 //    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 //    subdomains: 'abcd',
@@ -248,19 +248,17 @@ var initMap = function() {
 //  }).addTo(map);
 // ----->END [GOOGLE MAP]  
 
-// ----->NEW CODE [GREYHAWK MAP]   
-  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {
-	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>',
-	width: 29051, //-->ADDED
-	height: 25235, //-->ADDED
-	continuousWorld: false, //-->ADDED
-	noWrap: true, //-->ADDED
-	minZoom: 2, //-->ADDED
-	maxZoom: 9, //-->ADDED
+// ----->ADD/REPLACE [GREYHAWK MAP]   
+  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // ----->**CHANGE**: url of hosted Content
+	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>', // ----->**CHANGE**: map attribution
+	width: 29051, // ----->**CHANGE**: the pixel width of your original map image file (pre-zoomify)
+	height: 25235, // ----->**CHANGE**: the pixel height of your original map image (pre-zoomify)
+	continuousWorld: false,
+	noWrap: true, 
+	minZoom: 2, // ----->**CHANGE**: minimum zoom level for map
+	maxZoom: 9, // ----->**CHANGE**: maximum zoom level for map
  	subdomains: 'abcd',
-//	maxZoom: 19
-  }).addTo(map);  
-	
+  }).addTo(map);  	
 // ----->END [GREYHAWK MAP]
 	 
   loadData(dataLocation);
