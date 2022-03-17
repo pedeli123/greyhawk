@@ -1,8 +1,7 @@
 # Fantasy Map with Interactive Geotags
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
 
-## Live link
-Demo map: https://pedeli123.github.io/greyhawk
+Live Link: https://pedeli123.github.io/greyhawk
 
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
@@ -18,8 +17,8 @@ This silly little project that I spend way too much time on (according to my wif
 <li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty & Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
-## Steps to re-Create (using your own IMAGE MAP)
-<b>A. BASE MAP SETUP</b>
+# Steps to re-Create (using your own IMAGE MAP)
+## [A] BASE MAP SETUP
 <ol>
 <li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
@@ -35,14 +34,14 @@ This silly little project that I spend way too much time on (according to my wif
 <li>Verify your (3) Folder and its (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 </ol>
 
-<b>B. GOOGLE SHEET SETUP</b>
+## [B] GOOGLE SHEET SETUP
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
 <li>SHARE that Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
 <li>PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 </ol>
 
-<b>C. GIT REPOSITORY SETUP</b>
+## [C] GIT REPOSITORY SETUP
 <ol>
 <li>Fork this project (to create your MAIN repo)
 <li>Edit/Customize code elements within the following files:<br><em>[look for <b>"-----**CHANGE**: ..."</b> notes within each file for specific instructions]</em>
@@ -52,11 +51,11 @@ This silly little project that I spend way too much time on (according to my wif
 <li>scripts → settings.js
 </ol>
 </ol>
-<b>D. PUBLISH YOUR GITHUB PAGE</b>
+## [D] PUBLISH YOUR GITHUB PAGE
 <ol>
 <li>Publish your MAIN branch ROOT folder [Settings →  Pages]
 </ol>
-<b>E. CUSTOMIZE YOUR MAP CONTENT</b>
+## [E] CUSTOMIZE MAP CONTENT
 <ol>
 <li>Upload icons in the Media Folder (organize as needed)
 <li>Edit the Google Sheet (to reference story elements, including those icons)
@@ -66,15 +65,14 @@ VOILA!
 <br><em>(your map should now be up and running on your published Github page)</em>
 
 
+# HELPFUL HINTS
+## MAP COORDINATES
+Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-## HELPFUL HINTS **using the map
-MAP COORDINATES
-<br>Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
+## REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
+You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). [see README instructions at <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methods]
 
-
-REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
-<br>You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). [see README instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methodologies]
-
+# **BELOW STILL UNDER CONSTRUCTON**
 
 Copy and paste the published URL into the `dataLocation`
 variable in the `settings.js` file as shown below. Make sure that the long link ends in: `.../pub?gid=0&single=true&output=csv`
