@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 9); // ----->**CHANGE**: define flyto zoom level, less than max zoom! (see below)
+      map.flyTo(this._latlng, 9); // -----**CHANGE**: define flyto zoom level, less than max zoom! (see below)
       updateSidebar(this);
     });
 
@@ -249,14 +249,14 @@ var initMap = function() {
 // ----->END [GOOGLE MAP]  
 
 // ----->ADD/REPLACE [GREYHAWK MAP]   
-  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // ----->**CHANGE**: url of hosted Content
-	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>', // ----->**CHANGE**: map attribution
-	width: 29051, // ----->**CHANGE**: the pixel width of your original map image file (pre-zoomify)
-	height: 25235, // ----->**CHANGE**: the pixel height of your original map image (pre-zoomify)
+  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // -----**CHANGE**: url of hosted map Content
+	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2019 Edition REV1 hexed)</a>', // -----**CHANGE**: map attribution
+	width: 29051, // -----**CHANGE**: the pixel width of your original map image file (pre-zoomify)
+	height: 25235, // -----**CHANGE**: the pixel height of your original map image (pre-zoomify)
 	continuousWorld: false,
 	noWrap: true, 
-	minZoom: 2, // ----->**CHANGE**: minimum zoom level for map
-	maxZoom: 9, // ----->**CHANGE**: maximum zoom level for map
+	minZoom: 2, // -----**CHANGE**: minimum zoom level for map
+	maxZoom: 9, // -----**CHANGE**: maximum zoom level for map
  	subdomains: 'abcd',
   }).addTo(map);  	
 // ----->END [GREYHAWK MAP]
