@@ -45,7 +45,7 @@ This silly little project results from the absolutely amazing work done by:
 <b>C. SETUP YOUR GIT REPOSITORY</b>
 <ol>
 <li>Fork this project (to create your MAIN Git repo)
-<li>Customize specific code elements within the following files: [see "!!!---CUSTOMIZE..." notes within each]
+<li>Customize specific code elements within the following files:<br>[look for "!!!---CUSTOMIZE..." notes within each file for specific instructions]
 <ol>
 <li>index.html
 <li>scripts → script.js
