@@ -32,10 +32,10 @@ A. SETUP MAP
 <li>Verify your (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 B. SETUP GIT
 <ol>
-<li>
-<li>
-<li>
-<li>
+<li>1
+<li>2
+<li>3
+<li>4
 </ol>
 C. EDIT FILES
 
