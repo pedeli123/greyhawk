@@ -1,7 +1,42 @@
-# leaflet-point-map-sidebar
-Leaflet Point Map with Sidebar with Google Sheets -- Best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a multi-paragraph description and multi-image gallery for each point. Edit and host all text in a linked Google Sheet or CSV file, with pathnames to images stored in your GitHub repo.
+# Greyhawk Interactive Map
+This is a "Leaflet" powered "fantasy map" with geotagged "story data" (pulled from a Google Sheet)
 
-![Preview](preview.png)
+#Project Purpose
+I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag its key elements/encounters.  
+
+This software is designed to catalogue/reference key incidents during our campaign "where" they occur (on a fantasy map) to render/showcase an interactive story-map.   
+
+#Attribution
+This silly little project expands on the absolutely amazing work done by:
+--<a href="https://agafonkin.com/">Vladimir Agafonkin</a>[<a href="https://leafletjs.com/">leaflet</a>]
+--<a href="http://www.zoomify.com/">Zoomify</a>
+--<a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmulders/Leaflet.Zoomify">cmulders</a> [Leaflet.Zoomify]
+--<a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou)<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>
+--<a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
+
+#Steps to re-Create (using your own IMAGE NAP)
+<ol>
+<li>Select high density IMAGE to use (as your &ldquo;map&rdquo;)</li>
+<li>Transform (1) into &ldquo;IMAGE TILES&rdquo; using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
+<ol>
+<li><em>your output will include several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file [Imageproperties.xml]</em></li>
+</ol>
+<li>Upload (2) Content to a PUBLIC FOLDER created on your Server [public_html &rarr; Folder]</li>
+<ol>
+<li>Grant READ PERMISSIONS on that (3) Folder [recommend &ldquo;0755&rdquo; (=rwxr-xr-x)]&nbsp;</li>
+<li>Grant FILENAME &amp; DESCRIPTION INDEXING on that (3) Folder [see Cpanel&rarr;Advanced&rarr;Indexes]</li>
+<li><em>Ensure direct access to that Folder is not blocked by .htaccess rules (or similar)</em></li>
+</ol>
+<li>Verify the (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+
+
+
+
+mmersive online that with interactive geotags point cartographic  wanted to Being a story-centric narrative  
+
+It works best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a multi-paragraph description and multi-image gallery for each point. 
+
+Edit and host all text in a linked Google Sheet or CSV file, with pathnames to images stored in your GitHub repo.
 
 ## Live links (replace with your own)
 
@@ -9,13 +44,13 @@ Demo map: https://handsondataviz.github.io/leaflet-point-map-sidebar/
 
 Google Sheet: https://docs.google.com/spreadsheets/d/1h1rJa-fshPbuzaqabQUjIDmuM2O6f5K0KPEvaAQT568/edit#gid=0
 
-Created by Ilya Ilyankou and Jack Dougherty. Learn how to create your own copy and see related Leaflet map templates in our book, *Hands-On Data Visualization*: https://handsondataviz.org/leaflet.html
-
 ## Edit and store data in Google Sheets or CSV
 The map pulls data for each place from a single CSV file that matches our Google Sheets template.
 You can store your data remotely (in a published Google Sheet) or locally (as a CSV file in your online GitHub folder).
 
-To store your data remotely in Google Sheets, go to our template to *File > Make a Copy* and store in your Google Drive. Your Google Sheet must be public and published.
+To store your data remotely in Google Sheets, go to https://docs.google.com/spreadsheets/d/1h1rJa-fshPbuzaqabQUjIDmuM2O6f5K0KPEvaAQT568/edit#gid=0
+*File > Make a Copy* and store in your Google Drive. Your Google Sheet must be public and published.
+
 Click `Share` button, and change permissions to *Anyone on the internet with this link can view*.
 Then go to `File > Publish to the web > Places`,
 and choose `Comma-separated values (.csv)` as shown below.
