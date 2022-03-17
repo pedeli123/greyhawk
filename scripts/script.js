@@ -273,10 +273,11 @@ var initMap = function() {
 // [--OLD--]  + dataLocation + '" target="_blank">data</a> or \
 // [--OLD--]  view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
 // [--OLD--]  GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+
 // ---> NEW
-  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
+  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 // [--OLD--]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">Github code</a>
-  ');
+
 // ---> end NEW
   
   // Add custom `home` control
