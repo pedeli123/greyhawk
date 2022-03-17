@@ -17,24 +17,22 @@ This silly little project expands on the absolutely amazing work done by:
 
 ## Steps to re-Create (using your own IMAGE MAP)
 <ol>
-<li>Select high density IMAGE to use (as your &ldquo;map&rdquo;)</li>
-<li>Transform (1) into &ldquo;IMAGE TILES&rdquo; using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
+<li>Select a high density IMAGE to use (as your &ldquo;map&rdquo;)</li>
+<li>Transform your (1) Map into &ldquo;Image Tiles&rdquo; CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
 <ol>
-<li><em>your output will include several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file [Imageproperties.xml]</em></li>
+<li><em>this output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file [Imageproperties.xml]</em></li>
 </ol>
-<li>Upload (2) Content to a PUBLIC FOLDER created on your Server [public_html &rarr; Folder]</li>
+<li>Upload (2) Content to a public FOLDER created on your Server [public_html &rarr; Folder]</li>
 <ol>
 <li>Grant READ PERMISSIONS on that (3) Folder [recommend &ldquo;0755&rdquo; (=rwxr-xr-x)]&nbsp;</li>
 <li>Grant FILENAME &amp; DESCRIPTION INDEXING on that (3) Folder [see Cpanel&rarr;Advanced&rarr;Indexes]</li>
-<li><em>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</em></li>
+<li>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</li>
 </ol>
 <li>Verify the (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 
 
-## RE-TEXT
-
-mmersive online that with interactive geotags point cartographic  wanted to Being a story-centric narrative  
-
+## KEY COMPONENTS
+[EDIT FROM HERE]
 It works best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a mliti-paragraph description and mliti-image gallery for each point. 
 
 Edit and host all text in a linked Google Sheet or CSV file, with pathnames to images stored in your GitHub repo.
