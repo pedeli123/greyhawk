@@ -1,10 +1,10 @@
 # Fantasy Map with Interactive Geotags
-This is a "Leaflet" powered "fantasy map" with geotagged "story data" (compiled from a Google Sheet)
+This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" compiled from a Google Sheet
 
 ## Project Purpose
-I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" geotagging its key elements/encounters.  
+I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters.  
 
-This software will catalogue/place/reference/showcase defined story elements "where" they occur (on a fantasy map).
+This software catalogues/places/references/showcases various story elements "where" they occur on a campaign map. (in this case, the world of Greyhawk)
 
 ## Attribution
 This silly little project expands on the absolutely amazing work done by:
@@ -15,25 +15,34 @@ This silly little project expands on the absolutely amazing work done by:
 <li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
-## Steps to re-Create (using your own IMAGE MAP)
+## Steps for you to re-Create this (using your own IMAGE MAP)
+A. SETUP MAP
 <ol>
-<li>Select a high density IMAGE to use (as your &ldquo;map&rdquo;)</li>
-<li>Transform your (1) Map into &ldquo;Image Tiles&rdquo; CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
+<li>Select a high density image to use as your MAP</li>
+<li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
 <ol>
-<li><em>this output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file [Imageproperties.xml]</em></li>
+<li><em>this will output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em>as your Content</li>
 </ol>
-<li>Upload (2) Content to a public FOLDER created on your Server [public_html &rarr; Folder]</li>
+<li>Upload (2) Content to a PUBLIC FOLDER on your Server [public_html &rarr; Folder]</li>
 <ol>
 <li>Grant READ PERMISSIONS on that (3) Folder [recommend &ldquo;0755&rdquo; (=rwxr-xr-x)]&nbsp;</li>
 <li>Grant FILENAME &amp; DESCRIPTION INDEXING on that (3) Folder [see Cpanel&rarr;Advanced&rarr;Indexes]</li>
 <li>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</li>
 </ol>
-<li>Verify the (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+<li>Verify your (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+B. SETUP GIT
+<ol>
+<li>
+<li>
+<li>
+<li>
+</ol>
+C. EDIT FILES
 
 
-## KEY COMPONENTS
-[EDIT FROM HERE]
-It works best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a mliti-paragraph description and mliti-image gallery for each point. 
+HELPFUL HINTS
+## HELPFUL HINTS
+The software works best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a mliti-paragraph description and mliti-image gallery for each point. 
 
 Edit and host all text in a linked Google Sheet or CSV file, with pathnames to images stored in your GitHub repo.
 
