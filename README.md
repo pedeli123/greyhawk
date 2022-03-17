@@ -3,7 +3,7 @@ This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" dra
 
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
-<br><br>
+<br>
 This software basically catalogues/places/references/showcases various story elements "where" they occur on a fantasy campaign map. (in our case, the Flanaess)
 
 ## Attribution
@@ -16,55 +16,61 @@ This silly little project results from the absolutely amazing work done by:
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
 ## Steps to re-Create (using your own IMAGE MAP)
-A. SETUP YOUR BASE MAP
+<b>A. SETUP YOUR BASE MAP</b>
 <ol>
 <li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
 <ol>
-<li><em>to output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em></li>
+<li><em>this will output a folder that includes: several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em></li>
 </ol>
 <li>Upload your (2) Content to a PUBLIC FOLDER on your private Server [public_html →  Folder]</li>
 <ol>
-<li>Grant READ PERMISSIONS on that (3) Folder [recommend "0755" (=rwxr-xr-x)]</li>
-<li>Grant FILENAME & DESCRIPTION INDEXING on that (3) Folder [see Cpanel → Advanced → Indexes]</li>
-<li>Ensure direct access to that (3) Folder is not blocked by .htaccess rlies (or similar)</li>
+<li>Grant READ PERMISSIONS on that Folder [recommend "0755" (=rwxr-xr-x)]</li>
+<li>Grant FILENAME & DESCRIPTION INDEXING on that Folder [see Cpanel → Advanced → Indexes]</li>
+<li>Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)</li>
 </ol>
-<li>Verify your (3) Folder and (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
+<li>Verify your (3) Folder and its (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 </ol>
-B. PREPARE GOOGLE SHEET
+
+<b>B. PREPARE YOUR GOOGLE SHEET</b>
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
 <li>SHARE this file publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
 <li>PUBLISH this "Entire Document" as a "csv" [File  →  Share  →  Publish to Web]
 </ol>
 
-C. SETUP GIT REPOSITORY
+<b>C. SETUP YOUR GIT REPOSITORY</b>
 <ol>
 <li>Fork this project (to create your MAIN Git repository)
-<li>Edit code elements within these files: [REFER TO THE NOTES WITHIN EACH FILE]
+<li>Edit specific code elements within these files: [REFER TO NOTES WITHIN EACH FILE]
 <ol>
 <li>index.html
 <li>scripts → script.js
 <li>scripts → settings.js
 </ol>
 </ol>
-D. PUBLISH (ENABLE) YOUR GITHUB PAGE
+<b>D. ENABLE YOUR GITHUB PAGE</b>
 <ol>
-<li>Publish your MAIN repository ROOT folder [Settings →  Pages]
+<li>Publish the MAIN repository ROOT folder [Settings →  Pages]
 <ol>
+<b>E. CUSTOMIZE YOUR MAP CONTENT</b>
+<ol>
+<li>Replace/utilize icons in the Media Folder (as needed)
+<li>Edit the Google Sheet (as needed, referencing story elements including those icons)
+</ol>
+and voila!
 
 
-HELPFUL HINTS
-## HELPFUL HINTS
-The software works best to display points as custom thumbnail photo icons, organized by category, with a sidebar to show a mliti-paragraph description and mliti-image gallery for each point. 
+## HELPFUL HINTS **using the map
+Double click on a map position to get Latitude & Longitude (to insert in the Google Sheet)
 
-Edit and host all text in a linked Google Sheet or CSV file, with pathnames to images stored in your GitHub repo.
+Edit and host all text in a linked Google Sheet OR CSV file, with pathnames to images stored in your GitHub repo. [see instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for instructions on using the CSV file method]
 
-## Live links (replace with your own)
+## Live link
 
-Demo map: https://handsondataviz.github.io/leaflet-point-map-sidebar/
+Demo map: https://pedeli123.github.io/greyhawk
 
-Google Sheet: https://docs.google.com/spreadsheets/d/1h1rJa-fshPbuzaqabQUjIDmuM2O6f5K0KPEvaAQT568/edit#gid=0
+
 
 ## Edit and store data in Google Sheets or CSV
 The map plils data for each place from a single CSV file that matches our Google Sheets template.
