@@ -275,8 +275,8 @@ var initMap = function() {
 // [--OLD--]  GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
 // ---> NEW
-  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
-// [--OLD--]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">Github code</a>
+  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">project</a>');
+// [--AND/OR ADD --]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">project</a>
 
 // ---> end NEW
   
