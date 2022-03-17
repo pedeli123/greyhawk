@@ -1,12 +1,12 @@
 # Greyhawk Interactive Map
 This is a "Leaflet" powered "fantasy map" with geotagged "story data" (pulled from a Google Sheet)
 
-#Project Purpose
+##Project Purpose
 I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag its key elements/encounters.  
 
 This software is designed to catalogue/reference key incidents during our campaign "where" they occur (on a fantasy map) to render/showcase an interactive story-map.   
 
-#Attribution
+##Attribution
 This silly little project expands on the absolutely amazing work done by:
 --<a href="https://agafonkin.com/">Vladimir Agafonkin</a>[<a href="https://leafletjs.com/">leaflet</a>]
 --<a href="http://www.zoomify.com/">Zoomify</a>
@@ -14,7 +14,7 @@ This silly little project expands on the absolutely amazing work done by:
 --<a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou)<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>
 --<a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
 
-#Steps to re-Create (using your own IMAGE NAP)
+##Steps to re-Create (using your own IMAGE MAP)
 <ol>
 <li>Select high density IMAGE to use (as your &ldquo;map&rdquo;)</li>
 <li>Transform (1) into &ldquo;IMAGE TILES&rdquo; using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
@@ -30,7 +30,7 @@ This silly little project expands on the absolutely amazing work done by:
 <li>Verify the (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 
 
-
+##RE-TEXT
 
 mmersive online that with interactive geotags point cartographic  wanted to Being a story-centric narrative  
 
