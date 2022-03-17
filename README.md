@@ -1,10 +1,10 @@
 # Fantasy Map with Interactive Geotags
-This is a "Leaflet" powered "fantasy map" with geotagged "story data" (pliled from a Google Sheet)
+This is a "Leaflet" powered "fantasy map" with geotagged "story data" (compiled from a Google Sheet)
 
 ## Project Purpose
-I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag its key campaign elements/encounters.  
+I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" geotagging its key elements/encounters.  
 
-This software basically catalogues/references/showcases defined elements "where" they occur (on a fantasy map).
+This software will catalogue/place/reference/showcase defined story elements "where" they occur (on a fantasy map).
 
 ## Attribution
 This silly little project expands on the absolutely amazing work done by:
