@@ -7,10 +7,10 @@ Demo map: https://pedeli123.github.io/greyhawk
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
 <br>
-This software basically catalogues/places/references/showcases various story elements "where" they occur on a fantasy campaign map. (in our case, the Flanaess)
+This software basically catalogues/places/references/showcases various story elements on a fantasy campaign map. (in our case, the Flanaess)
 
 ## Attribution
-This silly little project results from the absolutely amazing work done by:
+This silly little project that I spend way too much time on (according to my wife) results from the absolutely amazing work done by:
 <ul>
 <li><a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]</li>
 <li><a href="http://www.zoomify.com/">Zoomify</a></li>
@@ -19,7 +19,7 @@ This silly little project results from the absolutely amazing work done by:
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
 ## Steps to re-Create (using your own IMAGE MAP)
-<b>A. SETUP YOUR BASE MAP</b>
+<b>A. BASE MAP SETUP</b>
 <ol>
 <li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
@@ -35,34 +35,35 @@ This silly little project results from the absolutely amazing work done by:
 <li>Verify your (3) Folder and its (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 </ol>
 
-<b>B. PREPARE YOUR GOOGLE SHEET</b>
+<b>B. GOOGLE SHEET SETUP</b>
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
-<li>SHARE this Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
-<li>PUBLISH this Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
+<li>SHARE that Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
+<li>PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 </ol>
 
-<b>C. SETUP YOUR GIT REPOSITORY</b>
+<b>C. GIT REPOSITORY SETUP</b>
 <ol>
-<li>Fork this project (to create your MAIN Git repo)
-<li>Customize specific code elements within the following files:<br><em>[look for "!!!---CUSTOMIZE..." notes within that file for specific instructions]</em>
+<li>Fork this project (to create your MAIN repo)
+<li>Edit/Customize code elements within the following files:<br><em>[look for "!!!---CUSTOMIZE..." notes within each file for specific instructions]</em>
 <ol>
 <li>index.html
 <li>scripts → script.js
 <li>scripts → settings.js
 </ol>
 </ol>
-<b>D. ENABLE YOUR GITHUB PAGE</b>
+<b>D. PUBLISH YOUR GITHUB PAGE</b>
 <ol>
-<li>Publish your MAIN repo ROOT folder [Settings →  Pages]
+<li>Publish your MAIN branch ROOT folder [Settings →  Pages]
 </ol>
 <b>E. CUSTOMIZE YOUR MAP CONTENT</b>
 <ol>
-<li>Replace/utilize icons in the Media Folder (as needed)
-<li>Edit the Google Sheet (as needed, referencing story elements including those icons)
+<li>Upload icons in the Media Folder (organize as needed)
+<li>Edit the Google Sheet (to reference story elements, including those icons)
 </ol>
 
-VOILA! (your map should be up and running on your published Github page)
+VOILA!
+<br><em>(your map should now be up and running on your published Github page)</em>
 
 
 
@@ -70,8 +71,9 @@ VOILA! (your map should be up and running on your published Github page)
 MAP COORDINATES
 <br>Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-CONTENT REFERENCE SHEET METHODOLOGY [either GOOGLE SHEET or CSV]
-<br>You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder), with pathnames to images stored in your GitHub repo. [see README instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methodologies]
+
+REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
+<br>You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). [see README instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methodologies]
 
 
 Copy and paste the published URL into the `dataLocation`
