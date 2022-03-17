@@ -2,9 +2,11 @@
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" compiled from a Google Sheet
 
 ## Project Purpose
-I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters.  
+I'm a GM running a Mythras campaign in the Greyhawk setting. 
+We love immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters.  
 
-This software catalogues/places/references/showcases various story elements "where" they occur on a campaign map. (in this case, the world of Greyhawk)
+This software catalogues/places/references/showcases various story elements "where" they occur on a campaign map. 
+(in this case, the world of Greyhawk)
 
 ## Attribution
 This silly little project expands on the absolutely amazing work done by:
@@ -15,13 +17,13 @@ This silly little project expands on the absolutely amazing work done by:
 <li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
-## Steps for you to re-Create this (using your own IMAGE MAP)
-A. SETUP MAP
+## Steps to re-Create this (with your own IMAGE MAP)
+A. SETUP BASE MAP
 <ol>
-<li>Select a high density image to use as your MAP</li>
+<li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
 <ol>
-<li><em>this will output several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em>as your Content</li>
+<li><em>this outputs several folders of image tiles [Tilegroup(1), Tilegroup(2), etc] and a master file reference [Imageproperties.xml]</em>as your Content</li>
 </ol>
 <li>Upload (2) Content to a PUBLIC FOLDER on your Server [public_html &rarr; Folder]</li>
 <ol>
@@ -32,10 +34,12 @@ A. SETUP MAP
 <li>Verify your (3) Folder and its (2) Contents are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
 B. SETUP GIT
 <ol>
-<li>1
-<li>2
-<li>3
-<li>4
+<li>Fork this project (to create your own repository)
+<li>Edit code within the following files [SEE NOTES WITHIN EACH AS TO WHERE]
+<ol>
+<li>scripts → script.js
+<li>index.html
+</ol>
 </ol>
 C. EDIT FILES
 
