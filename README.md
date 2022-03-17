@@ -4,15 +4,15 @@ This is a "Leaflet" powered "fantasy map" with geotagged "story data" (pulled fr
 ## Project Purpose
 I'm a GM running a Mythras campaign in the Greyhawk setting.  We love immersive storytelling so I wanted to create an interactive "story map" to geotag its key elements/encounters.  
 
-This software is designed to catalogue/reference key incidents during our campaign "where" they occur (on a fantasy map) to render/showcase an interactive story-map.   
+This software is designed to catalogue/reference key campaign incidents "where" they occur (on a fantasy map) to render/showcase these occurences on an interactive story-map.   
 
 ## Attribution
 This silly little project expands on the absolutely amazing work done by:
---<a href="https://agafonkin.com/">Vladimir Agafonkin</a>[<a href="https://leafletjs.com/">leaflet</a>]
---<a href="http://www.zoomify.com/">Zoomify</a>
---<a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmulders/Leaflet.Zoomify">cmulders</a> [Leaflet.Zoomify]
---<a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou)<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>
---<a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
+<p><a href="https://agafonkin.com/">Vladimir Agafonkin</a>[<a href="https://leafletjs.com/">leaflet</a>]</p>
+<p><a href="http://www.zoomify.com/">Zoomify</a></p>
+<p><a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmulders/Leaflet.Zoomify">cmulders</a> [Leaflet.Zoomify]</p>
+<p><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty &amp; Ilya Ilyankou)</p><a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a></p>
+<p><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</p>
 
 ## Steps to re-Create (using your own IMAGE MAP)
 <ol>
