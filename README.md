@@ -1,6 +1,9 @@
 # Fantasy Map with Interactive Geotags
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
 
+## Live link
+Demo map: https://pedeli123.github.io/greyhawk
+
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
 <br>
@@ -36,12 +39,12 @@ This silly little project results from the absolutely amazing work done by:
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
 <li>SHARE this file publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
-<li>PUBLISH this "Entire Document" as a "csv" [File  →  Share  →  Publish to Web]
+<li>PUBLISH this file as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 </ol>
 
 <b>C. SETUP YOUR GIT REPOSITORY</b>
 <ol>
-<li>Fork this project (to create your MAIN Git repository)
+<li>Fork this project (to create your MAIN Git repo)
 <li>Edit specific code elements within these files: [REFER TO NOTES WITHIN EACH FILE]
 <ol>
 <li>index.html
@@ -51,30 +54,24 @@ This silly little project results from the absolutely amazing work done by:
 </ol>
 <b>D. ENABLE YOUR GITHUB PAGE</b>
 <ol>
-<li>Publish the MAIN repository ROOT folder [Settings →  Pages]
-<ol>
+<li>Publish your MAIN repo ROOT folder [Settings →  Pages]
+</ol>
 <b>E. CUSTOMIZE YOUR MAP CONTENT</b>
 <ol>
 <li>Replace/utilize icons in the Media Folder (as needed)
 <li>Edit the Google Sheet (as needed, referencing story elements including those icons)
 </ol>
-and voila!
+
+VOILA! (your map should be up and running on your published Github page)
+
 
 
 ## HELPFUL HINTS **using the map
-Double click on a map position to get Latitude & Longitude (to insert in the Google Sheet)
+MAP COORDINATES:  Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-Edit and host all text in a linked Google Sheet OR CSV file, with pathnames to images stored in your GitHub repo. [see instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for instructions on using the CSV file method]
-
-## Live link
-
-Demo map: https://pedeli123.github.io/greyhawk
+OPTIONAL CSV FILE METHOD (vs Google Sheet): You can edit and host all text EITHER in a linked Google Sheet OR in a CSV file (stored in the local "data" folder), with pathnames to images stored in your GitHub repo. [see instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for instructions on using the CSV file method]
 
 
-
-## Edit and store data in Google Sheets or CSV
-The map plils data for each place from a single CSV file that matches our Google Sheets template.
-You can store your data remotely (in a published Google Sheet) or locally (as a CSV file in your online GitHub folder).
 
 To store your data remotely in Google Sheets, go to https://docs.google.com/spreadsheets/d/1h1rJa-fshPbuzaqabQUjIDmuM2O6f5K0KPEvaAQT568/edit#gid=0
 *File > Make a Copy* and store in your Google Drive. Your Google Sheet must be public and published.
