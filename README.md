@@ -1,13 +1,13 @@
 # Fantasy Map with Interactive Geotags
-This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" compiled from a Google Sheet
+This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
 
 ## Project Purpose
-I'm a GM running a Mythras campaign in the Greyhawk setting.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag our key encounters.  
-<br>So I created this software:<br>
-It basically catalogues/places/references/showcases various story elements "where" they occur on a campaign map. (in this case, the world of Greyhawk)
+I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
+<br><br>
+This software basically catalogues/places/references/showcases various story elements "where" they occur on a fantasy campaign map. (in our case, the Flanaess)
 
 ## Attribution
-This silly little project expands on the absolutely amazing work done by:
+This silly little project results from the absolutely amazing work done by:
 <ul>
 <li><a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]</li>
 <li><a href="http://www.zoomify.com/">Zoomify</a></li>
@@ -16,7 +16,7 @@ This silly little project expands on the absolutely amazing work done by:
 <li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
 
 ## Steps to re-Create (using your own IMAGE MAP)
-A. SETUP BASE MAP
+A. SETUP YOUR BASE MAP
 <ol>
 <li>Select a high density image to use as your BASE MAP</li>
 <li>Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a></li>
@@ -40,15 +40,18 @@ B. PREPARE GOOGLE SHEET
 
 C. SETUP GIT REPOSITORY
 <ol>
-<li>Fork this project (to create your own Git repository)
-<li>Edit code elements within the following files: [SEE NOTES WITHIN EACH FILE]
+<li>Fork this project (to create your MAIN Git repository)
+<li>Edit code elements within these files: [REFER TO THE NOTES WITHIN EACH FILE]
 <ol>
 <li>index.html
 <li>scripts → script.js
 <li>scripts → settings.js
 </ol>
 </ol>
-D. EDIT FILES
+D. PUBLISH (ENABLE) YOUR GITHUB PAGE
+<ol>
+<li>Publish your MAIN repository ROOT folder [Settings →  Pages]
+<ol>
 
 
 HELPFUL HINTS
