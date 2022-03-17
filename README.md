@@ -45,7 +45,7 @@ This silly little project that I spend way too much time on (according to my wif
 <b>C. GIT REPOSITORY SETUP</b>
 <ol>
 <li>Fork this project (to create your MAIN repo)
-<li>Edit/Customize code elements within the following files:<br><em>[look for "!!!---CUSTOMIZE..." notes within each file for specific instructions]</em>
+<li>Edit/Customize code elements within the following files:<br><em>[look for "!--**CHANGE..." notes within each file for specific instructions]</em>
 <ol>
 <li>index.html
 <li>scripts → script.js
