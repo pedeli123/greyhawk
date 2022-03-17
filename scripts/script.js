@@ -268,17 +268,9 @@ var initMap = function() {
     alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)
   });
 
-  // Add data & GitHub links
-// [--OLD--]  map.attributionControl.setPrefix('Download <a href="'
-// [--OLD--]  + dataLocation + '" target="_blank">data</a> or \
-// [--OLD--]  view <a href="http://github.com/handsondataviz/leaflet-point-map-sidebar" target="_blank">code on\
-// [--OLD--]  GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
-
-// ---> NEW
-  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">project</a>');
-// [--AND/OR ADD --]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">project</a>
-
-// ---> end NEW
+// ---> Add Code Attribution
+  map.attributionControl.setPrefix('Powered by <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+// [--CAN ALSO ADD BEFORE '); ]  | Download <a href="' + dataLocation + '" target="_blank">data</a> or view <a href="https://github.com/pedeli123/greyhawk" target="_blank">project</a>
   
   // Add custom `home` control
   addHomeButton();
