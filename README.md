@@ -45,7 +45,7 @@ This silly little project results from the absolutely amazing work done by:
 <b>C. SETUP YOUR GIT REPOSITORY</b>
 <ol>
 <li>Fork this project (to create your MAIN Git repo)
-<li>Customize specific code elements within the following files:<br>[look for "!!!---CUSTOMIZE..." notes within each file for specific instructions]
+<li>Customize specific code elements within the following files:<br><em>[look for "!!!---CUSTOMIZE..." notes within that file for specific instructions]</em>
 <ol>
 <li>index.html
 <li>scripts → script.js
@@ -67,20 +67,12 @@ VOILA! (your map should be up and running on your published Github page)
 
 
 ## HELPFUL HINTS **using the map
-MAP COORDINATES:  Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
+MAP COORDINATES
+<br>Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-OPTIONAL CSV FILE METHOD (vs Google Sheet): You can edit and host all text EITHER in a linked Google Sheet OR in a CSV file (stored in the local "data" folder), with pathnames to images stored in your GitHub repo. [see instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for instructions on using the CSV file method]
+CONTENT REFERENCE SHEET METHODOLOGY [either GOOGLE SHEET or CSV]
+<br>You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder), with pathnames to images stored in your GitHub repo. [see README instructions at [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a> for more granular instructions on both methodologies]
 
-
-
-To store your data remotely in Google Sheets, go to https://docs.google.com/spreadsheets/d/1h1rJa-fshPbuzaqabQUjIDmuM2O6f5K0KPEvaAQT568/edit#gid=0
-*File > Make a Copy* and store in your Google Drive. Your Google Sheet must be public and published.
-
-Click `Share` button, and change permissions to *Anyone on the internet with this link can view*.
-Then go to `File > Publish to the web > Places`,
-and choose `Comma-separated values (.csv)` as shown below.
-
-![Screenshot: Publish the Google Sheet *Places* as CSV](publish-places-csv.png)
 
 Copy and paste the published URL into the `dataLocation`
 variable in the `settings.js` file as shown below. Make sure that the long link ends in: `.../pub?gid=0&single=true&output=csv`
