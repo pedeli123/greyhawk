@@ -1,6 +1,5 @@
 # Fantasy Map with Interactive Geotags
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
-
 Live Link: https://pedeli123.github.io/greyhawk
 
 ## Project Purpose
@@ -16,8 +15,8 @@ This silly little project (that I spend way too much time on according to my wif
 - <a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
 
 # Steps to re-Create (using your own IMAGE MAP)
-## [A] BASE MAP SETUP
 
+### [A] BASE MAP SETUP
 1. Select a high density image to use as your BASE MAP
 2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
     - several folders of image tiles [Tilegroup(1), Tilegroup(2), etc], and
@@ -28,42 +27,37 @@ This silly little project (that I spend way too much time on according to my wif
 4. Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)
 5. Verify your Folder (3)and its Contents (2) are <em>publicly viewable</em> and <em>indexed</em> at <em>https://url/folder</em>
 
-## [B] GOOGLE SHEET SETUP
-
+### [B] GOOGLE SHEET SETUP
 1. Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
 2. SHARE the Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
 3. PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 
 
-## [C] GIT REPOSITORY SETUP
-
+### [C] GIT REPOSITORY SETUP
 1. Fork this project (to create your MAIN repo)
 2. Edit/Customize code elements within the following files:<br><em>[look for <b>"-----**CHANGE**: ..."</b> notes within each file for specific instructions]</em>
     - index.html
     - scripts → script.js
     - scripts → settings.js
 
-## [D] PUBLISH YOUR GITHUB PAGE
-
+### [D] PUBLISH YOUR GITHUB PAGE
 1. Publish your MAIN branch ROOT folder [Settings →  Pages]
 
-
-## [E] CUSTOMIZE MAP CONTENT
-
+### [E] CUSTOMIZE MAP CONTENT
 1. Upload icons in the Media Folder (organize as needed)
 2. Edit the Google Sheet (to reference story elements, including those icons)
 
-### VOILA!  (your map should now be up and running on your published Github page)
-
+#### VOILA!  (your map should now be up and running on your published Github page)
 
 # HELPFUL HINTS
-## FINDING MAP COORDINATES
+
+### FINDING MAP COORDINATES
 Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-## REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
+### REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
 You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it).  If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
 
-## Entering text into the template
+### Entering text into the template
 This sidebar map was designed to display mlitiple paragraphs of text into the *Description* field for each location. The text must be consistent with HTML coding, which means to use *straight* single-quotes (also known as apostrophes) and double-quotes (`"`), *not* curly quotes that are commonly created by word-processor tools. 
 - To create a new paragraph, insert a double line-break (`<br><br>`). 
 - To enter links, use HTML tags to open in a new browser tab, such as
@@ -78,15 +72,6 @@ In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as
 ![Screenshot of text entry into template](old-readme/text-entry-screenshot.png)
 
 # [**BELOW STILL UNDER CONSTRUCTON**]
-
-
-
-
-
-
-  
-
-
 
 ## Edit map title and defalit text
 Go to `index.html` to edit the map title, introductory text, and footer, which always appears in the sidebar when users click on different places.
