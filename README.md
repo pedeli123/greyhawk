@@ -6,16 +6,15 @@ Live Link: https://pedeli123.github.io/greyhawk
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
 <br>
-This software basically catalogues/places/references/showcases various story elements on a fantasy campaign map. (in our case, the Flanaess)
-
+This software will catalogue/place/reference/showcase story elements on a fantasy campaign map (in our case, the Flanaess)
+You basically place "icons" at map coordinates which have corresponding story elements which "display" when these icons are "selected".  All these elements are identified/catalogued in a google sheet.  
 ## Attribution
-This silly little project that I spend way too much time on (according to my wife) results from the absolutely amazing work done by:
-<ul>
-<li><a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]</li>
-<li><a href="http://www.zoomify.com/">Zoomify</a></li>
-<li><a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmliders/Leaflet.Zoomify">cmliders</a> [Leaflet.Zoomify]</li>
-<li><a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty & Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]</li>
-<li><a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]</li></ul>
+This silly little project (that I spend way too much time on according to my wife) results from the absolutely amazing work already done by:
+- <a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]
+- <a href="http://www.zoomify.com/">Zoomify</a>
+- <a href="https://github.com/turban/Leaflet.Zoomify">turban</a> and <a href="https://github.com/cmliders/Leaflet.Zoomify">cmliders</a> [Leaflet.Zoomify]
+- <a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty & Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]
+- <a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
 
 # Steps to re-Create (using your own IMAGE MAP)
 ## [A] BASE MAP SETUP
@@ -37,7 +36,7 @@ This silly little project that I spend way too much time on (according to my wif
 ## [B] GOOGLE SHEET SETUP
 <ol>
 <li>Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
-<li>SHARE that Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
+<li>SHARE the Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
 <li>PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 </ol>
 
