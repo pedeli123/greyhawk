@@ -54,7 +54,7 @@ This silly little project (that I spend way too much time on according to my wif
 #### VOILA!  (your map should now be up and running on your published Github page)
 <br>
 - - - -
-<br>
+
 # HELPFUL HINTS
 
 ### FINDING MAP COORDINATES
