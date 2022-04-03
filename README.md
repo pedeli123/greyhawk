@@ -64,7 +64,7 @@ This silly little project (that I spend way too much time on according to my wif
 ### REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
 - You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it).  If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
 
-### Entering text into the template
+### ENTERING TEXT INTO THE GOOGLE SHEET (or CSV)
 - This sidebar map was designed to display mlitiple paragraphs of text into the *Description* field for each location. The text must be consistent with HTML coding, which means to use *straight* single-quotes (also known as apostrophes) and double-quotes (`"`), *not* curly quotes that are commonly created by word-processor tools. 
     - To create a new paragraph, insert a double line-break (`<br><br>`). 
     - To enter links, use HTML tags to open in a new browser tab, such as
