@@ -6,8 +6,7 @@ Live Link: https://pedeli123.github.io/greyhawk
 ## Project Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
 <br>
-This software will catalogue/place/reference/showcase story elements on a fantasy campaign map (in our case, the Flanaess)
-You basically place "icons" at map coordinates which have corresponding story elements which "display" when these icons are "selected".  All these elements are identified/catalogued in a google sheet.  
+This software will catalogue/place/reference/showcase story elements on a fantasy campaign map (in our case, the Flanaess).  You can place "icons" at map coordinates which have corresponding story elements that "display" when the icons are "selected".  All elements are catalogued in a google sheet.  
 ## Attribution
 This silly little project (that I spend way too much time on according to my wife) results from the absolutely amazing work already done by:
 - <a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]
@@ -20,49 +19,41 @@ This silly little project (that I spend way too much time on according to my wif
 ## [A] BASE MAP SETUP
 
 1. Select a high density image to use as your BASE MAP
-2. Transform your (1) Map into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
-    - several folders of image tiles [Tilegroup(1), Tilegroup(2), etc],
-    - a master file reference [Imageproperties.xml]</em>
-
-3. Upload your (2) Content to a PUBLIC FOLDER on your private Server [public_html →  Folder]
+2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
+    - several folders of image tiles [Tilegroup(1), Tilegroup(2), etc], and
+    - a master file reference [Imageproperties.xml]
+3. Upload your Content (2) to a PUBLIC FOLDER on your private Server [public_html →  Folder]
     - Grant READ PERMISSIONS on that Folder [recommend "0755" (=rwxr-xr-x)]
     - Grant FILENAME & DESCRIPTION INDEXING on that Folder [see Cpanel → Advanced → Indexes]
 4. Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)
-
-- Verify your (3) Folder and its (2) Contents therein are <em>publicly viewable</em> and <em>indexed</em> at "https://url/folder"
-
+5. Verify your Folder (3)and its Contents (2) are <em>publicly viewable</em> and <em>indexed</em> at <em>https://url/folder</em>
 
 ## [B] GOOGLE SHEET SETUP
 
-- Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
-- SHARE the Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
-- PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
+1. Make a copy of this <a href="https://docs.google.com/spreadsheets/d/1WFsDxLIlB2HZSsSqijgguo0nEwRFD_7ayn6Ha_THn6w/edit?usp=sharing">Google Sheet</a> to your Google Drive 
+2. SHARE the Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
+3. PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 
 
 ## [C] GIT REPOSITORY SETUP
 
-- Fork this project (to create your MAIN repo)
-- Edit/Customize code elements within the following files:<br><em>[look for <b>"-----**CHANGE**: ..."</b> notes within each file for specific instructions]</em>
-
-- index.html
-- scripts → script.js
-- scripts → settings.js
-
-
+1. Fork this project (to create your MAIN repo)
+2. Edit/Customize code elements within the following files:<br><em>[look for <b>"-----**CHANGE**: ..."</b> notes within each file for specific instructions]</em>
+    - index.html
+    - scripts → script.js
+    - scripts → settings.js
 
 ## [D] PUBLISH YOUR GITHUB PAGE
 
-- Publish your MAIN branch ROOT folder [Settings →  Pages]
+1. Publish your MAIN branch ROOT folder [Settings →  Pages]
 
 
 ## [E] CUSTOMIZE MAP CONTENT
 
-- Upload icons in the Media Folder (organize as needed)
-- Edit the Google Sheet (to reference story elements, including those icons)
+1. Upload icons in the Media Folder (organize as needed)
+2. Edit the Google Sheet (to reference story elements, including those icons)
 
-
-VOILA!
-<br><em>(your map should now be up and running on your published Github page)</em>
+### VOILA!  (your map should now be up and running on your published Github page)
 
 
 # HELPFUL HINTS
