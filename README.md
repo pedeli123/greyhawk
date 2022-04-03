@@ -1,11 +1,14 @@
 # Fantasy Map with Interactive Geotags
+
+## Description
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
 Live Link: https://pedeli123.github.io/greyhawk
 
-## Project Purpose
+## Purpose
 I'm a GameMaster running a Mythras campaign in the world of Greyhawk.  We enjoy immersive storytelling so I wanted to create an interactive "story map" to geotag key encounters "where" they occur on the Flanaess map.  
 <br>
 This software will catalogue/place/reference/showcase story elements on a fantasy campaign map (in our case, the Flanaess).  You can place "icons" at map coordinates which have corresponding story elements that "display" when the icons are "selected".  All elements are catalogued in a google sheet.  
+
 ## Attribution
 This silly little project (that I spend way too much time on according to my wife) results from the absolutely amazing work already done by:
 - <a href="https://agafonkin.com/">Vladimir Agafonkin</a> [<a href="https://leafletjs.com/">leaflet</a>]
@@ -49,8 +52,9 @@ This silly little project (that I spend way too much time on according to my wif
 2. Edit the Google Sheet (to reference story elements, including those icons)
 
 #### VOILA!  (your map should now be up and running on your published Github page)
+<br>
 - - - -
-
+<br>
 # HELPFUL HINTS
 
 ### FINDING MAP COORDINATES
@@ -74,6 +78,7 @@ In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as
 ![Screenshot of text entry into template](old-readme/text-entry-screenshot.png)
 
 - - - -
+<br><br><br><br>
 
 # [**BELOW STILL UNDER CONSTRUCTON**]
 
