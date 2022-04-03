@@ -174,7 +174,7 @@ var addMarkers = function(data) {
   }
 
   L.control.layers({}, groups, {collapsed: false}).addTo(map);
-  $('.leaflet-control-layers-overlays').prepend('<h3 class="mt0 mb1 f5 black-30">Themes</h3>');  // -----**CHANGE**: change "Themes" Legend title to whatever title you want
+  $('.leaflet-control-layers-overlays').prepend('<h3 class="mt0 mb1 f5 black-30">Themes</h3>');
 
   // If name in hash, activate it
   if (activeMarker) { activeMarker.fire('click') }
