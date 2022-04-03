@@ -59,22 +59,22 @@ This silly little project (that I spend way too much time on according to my wif
 # HELPFUL HINTS
 
 ### FINDING MAP COORDINATES
-Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
+- Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
 ### REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
-You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it).  If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
+- You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it).  If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
 
 ### Entering text into the template
-This sidebar map was designed to display mlitiple paragraphs of text into the *Description* field for each location. The text must be consistent with HTML coding, which means to use *straight* single-quotes (also known as apostrophes) and double-quotes (`"`), *not* curly quotes that are commonly created by word-processor tools. 
-- To create a new paragraph, insert a double line-break (`<br><br>`). 
-- To enter links, use HTML tags to open in a new browser tab, such as
+- This sidebar map was designed to display mlitiple paragraphs of text into the *Description* field for each location. The text must be consistent with HTML coding, which means to use *straight* single-quotes (also known as apostrophes) and double-quotes (`"`), *not* curly quotes that are commonly created by word-processor tools. 
+    - To create a new paragraph, insert a double line-break (`<br><br>`). 
+    - To enter links, use HTML tags to open in a new browser tab, such as
 ```
 .<br><br><a href='https://connecticuthistory.org/bridge-ornaments-help-tell-the-legend-of-the-windham-frog-fight/' target='_blank'>More</a> about Windham's Frog Fight
 ```
 
-When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Atom Editor](https://atom.io), create a file named `temporary.html`, set *View > Toggle Soft Wrap*, and prepare all of your *Description* text there before copying and pasting into the Google Sheet. Also, install the [Dumb-Quoter Atom Package](https://atom.io/packages/dumb-quoter) to convert curly-quotes into straight-quotes with CTRL-ALT-' (or CTRL-OPTION-' on Mac).
+- When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Atom Editor](https://atom.io), create a file named `temporary.html`, set *View > Toggle Soft Wrap*, and prepare all of your *Description* text there before copying and pasting into the Google Sheet. Also, install the [Dumb-Quoter Atom Package](https://atom.io/packages/dumb-quoter) to convert curly-quotes into straight-quotes with CTRL-ALT-' (or CTRL-OPTION-' on Mac).
 
-In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
+- In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
 
 ![Screenshot of text entry into template](old-readme/text-entry-screenshot.png)
 
