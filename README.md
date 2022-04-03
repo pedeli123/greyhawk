@@ -14,6 +14,8 @@ This silly little project (that I spend way too much time on according to my wif
 - <a href="https://handsondataviz.org/">Hands-On Data Visualization</a> (Jack Dougherty & Ilya Ilyankou [<a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">leaflet-point-map-sidebar</a>]
 - <a href="https://www.annabmeyer.com/">Anna B Meyer</a> [Greyhawk map]
 
+- - - -
+
 # Steps to re-Create (using your own IMAGE MAP)
 
 ### [A] BASE MAP SETUP
@@ -32,7 +34,6 @@ This silly little project (that I spend way too much time on according to my wif
 2. SHARE the Sheet publicly so that "Anyone on the internet with this link can view" [File  →  Share  →  Share with Others]
 3. PUBLISH that Sheet as "Places" in "csv" format [File  →  Share  →  Publish to Web]
 
-
 ### [C] GIT REPOSITORY SETUP
 1. Fork this project (to create your MAIN repo)
 2. Edit/Customize code elements within the following files:<br><em>[look for <b>"-----**CHANGE**: ..."</b> notes within each file for specific instructions]</em>
@@ -48,6 +49,7 @@ This silly little project (that I spend way too much time on according to my wif
 2. Edit the Google Sheet (to reference story elements, including those icons)
 
 #### VOILA!  (your map should now be up and running on your published Github page)
+- - - -
 
 # HELPFUL HINTS
 
@@ -70,6 +72,8 @@ When working with large amounts of *Description* text, you may find it easiest t
 In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
 
 ![Screenshot of text entry into template](old-readme/text-entry-screenshot.png)
+
+- - - -
 
 # [**BELOW STILL UNDER CONSTRUCTON**]
 
