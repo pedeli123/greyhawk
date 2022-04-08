@@ -44,7 +44,7 @@ This silly little project (that I spend way too much time on according to my wif
     - scripts → script.js
     - scripts → settings.js
 
-### [D] PUBLISH YOUR GITHUB PAGE
+### [D] PUBLISH GITHUB PAGE
 1. Publish your MAIN branch ROOT folder [Settings →  Pages]
 
 ### [E] CUSTOMIZE MAP CONTENT
@@ -58,32 +58,32 @@ This silly little project (that I spend way too much time on according to my wif
 
 # HELPFUL HINTS
 
-### STORY CONTENT [referenced either via GOOGLE SHEET or CSV FILE]
+### STORY CONTENT 'placeholders' [referenced either via GOOGLE SHEET or CSV FILE]
 - "story placeholders" elements are referenced EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it). <br>If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
 
-## Add Story Placeholder ICON (thumbnail photo)
+### Placeholder ICON (thumbnail photo)
 Each "story place" can have 1 custom thumbnail photo icon. Upload the icon into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/icon/castle.png`.
 
-## Add Story Placeholder IMAGES
+### Placeholder IMAGES
 Each "story place" can have up to 5 images, each referenced by a "path" in the template (Google Sheet or CSV file).  Paths can be a url path (online, like I'm doing) or a Github subfolder path (to your GitHub repo where you uploaded the image).  Each image can have a caption, source, and link (if available).
     - <em>If you are uploading images it is recommended to reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display.</em>
 
-### Story Placeholder MAP COORDINATES  [identifying the map placement]
+### Placeholder MAP COORDINATES  [identifying the map placement]
 - Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-### Story Placeholder DESCRIPTION
-- *Description* fields `(Name, Subtitle, Caption, Description)` can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
+### Placeholder DESCRIPTION
+- Descriptive fields `(Name, Subtitle, Caption, Description)` can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
     - To create a new paragraph, insert a double line-break (`<br><br>`). 
     - To enter links, use HTML tags to open in a new browser tab, such as
 ```
-.<br><br><a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk
+<a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk
 ```
 
     - When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Notepad++](https://notepad-plus-plus.org), create a file named `temporary.html`, and prepare all of your *Description* text there before copying and pasting into the Google Sheet.
 
     - In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
 
-## Assigning the same place to 2 or more categories
+### Assigning the same place to 2 or more categories
 If a place needs to belong to two or more groups (also known as themes or categories), duplicate its row as many times as needed, and each time modifying its *Group* column only.
 
 - - - -
