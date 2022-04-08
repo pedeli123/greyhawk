@@ -75,17 +75,11 @@ Each "place" can have up to 5 images, each referenced by a "path" in the templat
 ### Placeholder DESCRIPTIVE FIELDS
 - Descriptive fields `(Name, Subtitle, Caption, Description)` can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
     - To create a new paragraph, insert a double line-break (`<br><br>`). 
-    - To enter links, use HTML tags to open in a new browser tab, such as
-```
-<a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk
-```
-DESCRIPTIVE TIPS
-    - When working with large amounts of *Description*, you may find it easiest to first use a text editor tool such as [Notepad++](https://notepad-plus-plus.org).  
-        - Create a file named `temporary.html`, and prepare all of your *Description* text there before copying and pasting into the Google Sheet.
-
-    - In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
+    - To enter links, use HTML tags to open in a new browser tab, such as `<a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk`
+    - When working with large amounts of *Description*, you may find it easiest to first use a text editor tool such as [Notepad++](https://notepad-plus-plus.org).  Just create a file named `temporary.html`, and prepare all of your *Description* text there before copying and pasting into the Google Sheet.
+        - In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
 
 ### Assigning the same place to 2 or more categories
-If a place needs to belong to two or more Groups (aka Themes), duplicate its row as many times as needed, and each time modifying its *Group* column only.
+- If a place needs to belong to two or more Groups (aka Themes), duplicate its row as many times as needed, and each time modifying its *Group* column only.
 
 - - - -
