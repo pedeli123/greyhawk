@@ -58,85 +58,31 @@ This silly little project (that I spend way too much time on according to my wif
 
 # HELPFUL HINTS
 
-### FINDING MAP COORDINATES
+### STORY CONTENT [referenced either via GOOGLE SHEET or CSV FILE]
+- "story placeholders" elements are referenced EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it). <br>If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
+
+## Add Story Placeholder ICON (thumbnail photo)
+Each "story place" can have 1 custom thumbnail photo icon. Upload the icon into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/icon/castle.png`.
+
+## Add Story Placeholder IMAGES
+Each "story place" can have up to 5 images, each referenced by a "path" in the template (Google Sheet or CSV file).  Paths can be a url path (online, like I'm doing) or a Github subfolder path (to your GitHub repo where you uploaded the image).  Each image can have a caption, source, and link (if available).
+    - <em>If you are uploading images it is recommended to reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display.
+
+### Story Placeholder MAP COORDINATES  [identifying the map placement]
 - Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-### REFERENCING CONTENT [either GOOGLE SHEET or CSV method]
-- You can edit/host your Content references EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder).  The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it).  If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
-
-### ENTERING TEXT INTO THE GOOGLE SHEET (or CSV)
-- This sidebar map was designed to display mlitiple paragraphs of text into the *Description* field for each location. The text must be consistent with HTML coding, which means to use *straight* single-quotes (also known as apostrophes) and double-quotes (`"`), *not* curly quotes that are commonly created by word-processor tools. 
+### DESCRIPTION TEXT
+- *Description* fields can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
     - To create a new paragraph, insert a double line-break (`<br><br>`). 
     - To enter links, use HTML tags to open in a new browser tab, such as
 ```
-.<br><br><a href='https://connecticuthistory.org/bridge-ornaments-help-tell-the-legend-of-the-windham-frog-fight/' target='_blank'>More</a> about Windham's Frog Fight
+.<br><br><a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk
 ```
+    - When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Notepad++](https://notepad-plus-plus.org), create a file named `temporary.html`, and prepare all of your *Description* text there before copying and pasting into the Google Sheet.
 
-- When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Atom Editor](https://atom.io), create a file named `temporary.html`, set *View > Toggle Soft Wrap*, and prepare all of your *Description* text there before copying and pasting into the Google Sheet. Also, install the [Dumb-Quoter Atom Package](https://atom.io/packages/dumb-quoter) to convert curly-quotes into straight-quotes with CTRL-ALT-' (or CTRL-OPTION-' on Mac).
+    - In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
 
-- In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
-
-![Screenshot of text entry into template](old-readme/text-entry-screenshot.png)
+## Assigning the same place to 2 or more categories
+If a place needs to belong to two or more groups (also known as themes or categories), duplicate its row as many times as needed, and each time modifying its *Group* column only.
 
 - - - -
-<br><br><br><br>
-
-# [**BELOW STILL UNDER CONSTRUCTON**]
-
-## Edit map title and defalit text
-Go to `index.html` to edit the map title, introductory text, and footer, which always appears in the sidebar when users click on different places.
-
-Enter map initial center and zoom level in `settings.js`:
-```
-// Map's initial center, and zoom level
-const mapCenter = [41.65, -72.7];
-const mapZoom = 9;
-```
-
-In the maps legend, the label *Themes* corresponds to *Groups* in the Google Sheet template. To edit this label in the map, go to `script.js` and modify the label "Themes" in this line:
-
-```
-L.control.layers({}, groups, {collapsed: false}).addTo(map);
-$('.leaflet-control-layers-overlays').prepend('<h3 class="mt0 mb1 f5 black-30">Themes</h3>');
-```
-
-## Assign the same place to 2 or more categories
-If a place needs to belong to two or more groups (also known as themes or categories),
-duplicate its row as many times as needed, and each time modifying its
-*Group* column only.
-
-## Add images
-Each place can have up to 5 images, which you upload to a subfolder in your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/frog-bridge.jpg`. We recommend that you reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display. Only the 1st of 5 images is shown in the sidebar. To scroll through the gallery, click the 1st image to bring up a flil-screen lightbox interface. The lightbox will say how many images there are, and will show
-a caption, source, and link (if available) for each image.
-
-## Add custom thumbnail photo icons
-Each place can have 1 custom thumbnail photo icon. Make a copy of your main image, then use a photo editor to crop and reduce the size to 64 x 64 pixels square, and upload into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/frog-bridge-icon.jpg`.
-
-In `settings.js`, you can modify the photo icon size as desired, such as 40 x 40 pixels, to squeeze mlitiple icons on a crowded map.
-
-```
-// Marker icon height and width
-const iconHeight = 40;
-const iconWidth = 40;
-```
-
-#### Geocode your address data with Google Sheets add-on
-To make icons appear in locations on your map, you need to geocode your data, which means to find and enter latitude and longitude coordinates for each point. We recommend installing the free [Geocoding by SmartMonkey add-on for Google Sheets](https://gsuite.google.com/marketplace/app/geocoding_by_smartmonkey/1033231575312). Insert your addresses in place of the samples in the Geocoding Details tab, then use Add-Ons > Geocoding > Geocode Details menu. Learn more in *Hands-On Data Visualization* https://handsondataviz.org/geocode.html
-
-![Geocoding](geocode.png)
-
-## Add Google Maps links for directions
-This map will automatically display a box under each place description with a Google Maps link for directions, if you enter the proper Google Maps link into your data. Use [Google Maps](https://www.google.com/maps) to search a place (such as
-"Frog Bridge, Connecticut"), then select `Share` button, and copy the *Link to share*, which appears similar to this: `https://goo.gl/maps/gLbedFmJBE31h9t2A`. Paste into the `GoogleMapsLink` column in the data template.
-
-## Share web links with URL hash
-When a place icon is clicked, its name is added to the hash part of the URL, and appears in your browser like this:
-
-`https://handsondataviz.github.io/leaflet-point-map-sidebar/#Frog-Bridge`
-
-This feature enables you to share a particliar place with others on social media, because when the map is loaded initially,
-it activates the place from hash if it exists instead of centering
-on defalit `mapCenter` (as defined in `settings.js`).
-
-## Learn more
-See related Leaflet Maps code templates in our book, [Hands-On Data Visualization](https://handsondataviz.org).
