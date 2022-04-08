@@ -63,10 +63,10 @@ This silly little project (that I spend way too much time on according to my wif
     - <em>the CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it). <br>If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a></em>
 
 ### Placeholder ICON (1)
-Each "place" can have 1 custom thumbnail photo icon. Upload the icon into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/icon/castle.png`.
+- Each "place" can have 1 custom thumbnail photo icon. Upload the icon into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/icon/castle.png`.
 
 ### Placeholder IMAGES (<=5)
-Each "place" can have up to 5 images, each referenced by a "path" in the template (Google Sheet or CSV file).  Paths can be a url path (online, like I'm doing) or a Github subfolder path (to your GitHub repo where you uploaded the image).  Each image can have a caption, source, and link (if available).
+- Each "place" can have up to 5 images, each referenced by a "path" in the template (Google Sheet or CSV file).  Paths can be a url path (online, like I'm doing) or a Github subfolder path (to your GitHub repo where you uploaded the image).  Each image can have a caption, source, and link (if available).
     - <em>If you are uploading images it is recommended to reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display.</em>
 
 ### Placeholder MAP COORDINATES  [Latitude, Longitude]
