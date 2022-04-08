@@ -1,4 +1,4 @@
-# Fantasy Map with Interactive Geotags
+# Fantasy Map with Interactive Story Placeholder 'Geotags'
 
 ## Description
 This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
@@ -58,9 +58,9 @@ This silly little project (that I spend way too much time on according to my wif
 
 # HELPFUL HINTS
 
-### Story Content PLACEHOLDERS [using either by GOOGLE SHEET or CSV FILE template]
-- "story placeholder" elements are referenced EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). 
-    - The CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it). <br>If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a>
+### Story Content PLACEHOLDER REFERENCES [either via GOOGLE SHEET or CSV FILE]
+- "story placeholder" geotag elements are referenced EITHER in a linked Google Sheet (as I've done) OR in a CSV file (stored in the local "data" folder). 
+    - <em>the CSV file method is basically a "less interactive" and more "permanent" solution that doesn't rely on Google (which is why I'm not currently doing it). <br>If you prefer to the csv method, you can learn more about doing that <a href="https://github.com/HandsOnDataViz/leaflet-point-map-sidebar">here</a></em>
 
 ### Placeholder ICON (1)
 Each "place" can have 1 custom thumbnail photo icon. Upload the icon into your GitHub repo and enter the pathname into the Google Sheets template, such as: `media/icon/castle.png`.
