@@ -1,7 +1,7 @@
-# Fantasy Map with Interactive Story Placeholder 'Geotags'
+# Fantasy Map with Interactive 'Geotags'
 
 ## Description
-This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story data" drawn from a Google Sheet
+This is a <em>Leaflet</em> powered "fantasy map" with geotagged "story elements" drawn from a Google Sheet
 Live Link: https://pedeli123.github.io/greyhawk
 
 ## Purpose
