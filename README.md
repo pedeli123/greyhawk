@@ -66,18 +66,19 @@ Each "story place" can have 1 custom thumbnail photo icon. Upload the icon into 
 
 ## Add Story Placeholder IMAGES
 Each "story place" can have up to 5 images, each referenced by a "path" in the template (Google Sheet or CSV file).  Paths can be a url path (online, like I'm doing) or a Github subfolder path (to your GitHub repo where you uploaded the image).  Each image can have a caption, source, and link (if available).
-    - <em>If you are uploading images it is recommended to reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display.
+    - <em>If you are uploading images it is recommended to reduce image sizes to approximately 1200 x 1000 pixels or less to ensure speedy display.</em>
 
 ### Story Placeholder MAP COORDINATES  [identifying the map placement]
 - Double click on a map position to get Latitude & Longitude (to insert as coordinates into the Google Sheet)
 
-### DESCRIPTION TEXT
-- *Description* fields can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
+### Story Placeholder DESCRIPTION
+- *Description* fields `(Name, Subtitle, Caption, Description)` can display multiple paragraphs of text for each story location. The text must be consistent with HTML coding. 
     - To create a new paragraph, insert a double line-break (`<br><br>`). 
     - To enter links, use HTML tags to open in a new browser tab, such as
 ```
 .<br><br><a href='https://greyhawkonline.com/greyhawkwiki/Main_Page' target='_blank'>Learn</a> about the World of Greyhawk
 ```
+
     - When working with large amounts of *Description* text, you may find it easiest to first use a text editor tool such as [Notepad++](https://notepad-plus-plus.org), create a file named `temporary.html`, and prepare all of your *Description* text there before copying and pasting into the Google Sheet.
 
     - In Google Sheets, use *Format > Text wrapping > Wrap* to view the entire cell as needed, then go back to *Overflow* when done.
