@@ -28,7 +28,7 @@ This silly little project (that I spend way too much time on according to my wif
         - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
         - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
             - I, for instance, play with the following commands to convert a very high-res 1.pdf to very high-res 1.png
-                - [density] magick -density 200 1.pdf 1.png
+                - [density] magick -density 500 1.pdf 1.png [*this is what I usually use*]
                 - [resize] magick convert 1.pdf -resize 200% 1.png
                 - [or both] magick convert 1.pdf -resize 200% -density 200 1.png
 2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
@@ -37,7 +37,7 @@ This silly little project (that I spend way too much time on according to my wif
 3. Upload your Content (2) to a PUBLIC FOLDER on your private Server [public_html →  Folder]
     - Grant READ PERMISSIONS on that Folder [recommend "0755" (=rwxr-xr-x)]
     - Grant FILENAME & DESCRIPTION INDEXING on that Folder [see Cpanel → Advanced → Indexes]
-4. Ensure direct access to that Folder is not blocked by .htaccess rlies (or similar)
+4. Ensure direct access to that Folder is not blocked by .htaccess files (or similar)
 5. Verify your Folder (3)and its Contents (2) are <em>publicly viewable</em> and <em>indexed</em> at <em>https://url/folder</em>
 
 ### [B] GOOGLE SHEET SETUP
