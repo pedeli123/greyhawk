@@ -23,7 +23,7 @@ This silly little project (that I spend way too much time on according to my wif
 
 ### [A] BASE MAP SETUP
 1. Select a high density image to use as your BASE MAP 
-a>. I recommend using "ImageMagick" to transform/edit images.  Use the following STEPS:
+    I recommend using "ImageMagick" to transform/edit images.  Use the following STEPS:
     - install <a href="https://www.imagemagick.org">ImageMagick</a>
     - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
     - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
