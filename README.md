@@ -27,8 +27,10 @@ a>. Recommend using "ImageMagick" to transform/edit imagesb using STEPS:
     - install <a href="https://www.imagemagick.org">ImageMagick</a>
     - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
     - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
-    - <i>I, for instance, use the following command to convert a very high-res 1.pdf to high-res 1.png:</i>
-        - magick convert 1.pdf -resize 500% -density 200 1.png
+        - I, for instance, play with the following commands to convert a very high-res 1.pdf to very high-res 1.png
+            - [density] magick -density 200 1.pdf 1.png
+            - [resize] magick convert 1.pdf -resize 200% 1.png
+            - [or both] magick convert 1.pdf -resize 200% -density 200 1.png
 2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
     - several folders of image tiles [Tilegroup(1), Tilegroup(2), etc], and
     - a master file reference [Imageproperties.xml]
