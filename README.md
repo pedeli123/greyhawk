@@ -23,14 +23,14 @@ This silly little project (that I spend way too much time on according to my wif
 
 ### [A] BASE MAP SETUP
 1. Select a high density image to use as your BASE MAP 
-    I recommend using "ImageMagick" to transform/edit images.  Use the following STEPS:
-    - install <a href="https://www.imagemagick.org">ImageMagick</a>
-    - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
-    - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
-        - I, for instance, play with the following commands to convert a very high-res 1.pdf to very high-res 1.png
-            - [density] magick -density 200 1.pdf 1.png
-            - [resize] magick convert 1.pdf -resize 200% 1.png
-            - [or both] magick convert 1.pdf -resize 200% -density 200 1.png
+    - I recommend using "ImageMagick" to transform/edit images.  Use the following STEPS:
+        - install <a href="https://www.imagemagick.org">ImageMagick</a>
+        - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
+        - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
+            - I, for instance, play with the following commands to convert a very high-res 1.pdf to very high-res 1.png
+                - [density] magick -density 200 1.pdf 1.png
+                - [resize] magick convert 1.pdf -resize 200% 1.png
+                - [or both] magick convert 1.pdf -resize 200% -density 200 1.png
 2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
     - several folders of image tiles [Tilegroup(1), Tilegroup(2), etc], and
     - a master file reference [Imageproperties.xml]
