@@ -7,5 +7,5 @@ const mapCenter = [-84.82, 69.88]; //// ----->**CHANGE**: replace with the cente
 const mapZoom = 4; //// ----->**CHANGE**: initial zoom level must be >min zoom and <max zoom (defined in scripts.js)
 
 // Marker icon height and width
-const iconHeight = 20; //// ----->**CHANGE**: size according to your preference
-const iconWidth = 20; //// ----->**CHANGE**: size according to your preference
+const iconHeight = 30; //// ----->**CHANGE**: size according to your preference
+const iconWidth = 30; //// ----->**CHANGE**: size according to your preference
