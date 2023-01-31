@@ -155,7 +155,7 @@ var addMarkers = function(data) {
         placeInfo: d
       },
     ).on('click', function(e) {
-      map.flyTo(this._latlng, 9); // -----**CHANGE**: define flyto zoom level, must be <= max zoom (see below)
+      map.flyTo(this._latlng, 10); // -----**CHANGE**: define flyto zoom level, must be <= max zoom (see below)
       updateSidebar(this);
     });
 
@@ -256,7 +256,7 @@ var initMap = function() {
 	continuousWorld: false,
 	noWrap: true, 
 	minZoom: 1, // -----**CHANGE**: minimum zoom level for map, according to preference
-	maxZoom: 9, // -----**CHANGE**: maximum zoom level for map, according to preference
+	maxZoom: 12, // -----**CHANGE**: maximum zoom level for map, according to preference
  	subdomains: 'abcd',
   }).addTo(map);  	
 // ----->END [Zoomify Map]
