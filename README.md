@@ -28,7 +28,7 @@ This silly little project (that I spend way too much time on according to my wif
         - install <a href="https://www.ghostScript.com/releases/gsdnld.html">GhostScript</a> (if ur converting from pdf to another image format.  ie. pdf to png)
         - convert image using cmd script as outlined <a href="https://imagemagick.org/script/command-line-processing.php">here</a>
             - I, for instance, play with the following commands to convert a very high-res 1.pdf to very high-res 1.png
-                - [density] magick -density 500 1.pdf 1.png [*this is what I usually use*]
+                - [density] magick -density 600 1.pdf 1.png [*this is what I usually do, which creates a 84.6k x 94.5k pixel png!!*]
                 - [resize] magick convert 1.pdf -resize 200% 1.png
                 - [or both] magick convert 1.pdf -resize 200% -density 200 1.png
 2. Transform your Map (1) into "image tiles" CONTENT using <a href="http://www.zoomify.com/free.htm">Zoomify</a>.  This will output a folder that includes: 
