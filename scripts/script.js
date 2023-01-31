@@ -256,7 +256,7 @@ var initMap = function() {
 	continuousWorld: false,
 	noWrap: true, 
 	minZoom: 2, // -----**CHANGE**: minimum zoom level for map, according to preference
-	maxZoom: 15, // -----**CHANGE**: maximum zoom level for map, according to preference
+	maxZoom: 16, // -----**CHANGE**: maximum zoom level for map, according to preference
  	subdomains: 'abcd',
   }).addTo(map);  	
 // ----->END [Zoomify Map]
