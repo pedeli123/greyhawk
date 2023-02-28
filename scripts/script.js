@@ -249,7 +249,7 @@ var initMap = function() {
 // ----->END [Google Map]  
 
 // ----->ADD/REPLACE [Zoomify Map]   
-  L.tileLayer.zoomify('//geoffway.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // -----**CHANGE**: url of hosted map Content
+  L.tileLayer.zoomify('//diceygamer.com/greyhawk//{g}/{z}-{x}-{y}.jpg', {  // -----**CHANGE**: url of hosted map Content
 	attribution: 'Flanaess Full Map 598 CY <a href="https://www.annabmeyer.com">(2022 Edition)</a>', // -----**CHANGE**: map attribution
 	width: 84603, // -----**CHANGE**: the pixel width of original map image file (pre-zoomify)
 	height: 94483, // -----**CHANGE**: the pixel height of original map image file (pre-zoomify)
